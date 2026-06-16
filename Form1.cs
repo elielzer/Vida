@@ -125,7 +125,11 @@ namespace BomDia
             toolStripStatusLabelUsuário.Text = "Usuário atual: ".ToUpper() + Usuário.ToUpper();
 
 
-            //
+            //Classificar dados
+            string rowFilter = "QUANDO > '" + DateTime.Today + "'";
+            bindingSourcePrévia.Filter = rowFilter;
+            bindingSourcePrévia.Sort = "QUANDO";
+            dataGridViewPrévia.FirstDisplayedScrollingRowIndex = 0;
             ;
         }
 

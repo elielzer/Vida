@@ -671,12 +671,12 @@ namespace BomDia
             this.ContextMenuStripVoltar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.voltarToolStripMenuItem});
             this.ContextMenuStripVoltar.Name = "ContextMenuStripVoltar";
-            this.ContextMenuStripVoltar.Size = new System.Drawing.Size(131, 36);
+            this.ContextMenuStripVoltar.Size = new System.Drawing.Size(241, 69);
             // 
             // voltarToolStripMenuItem
             // 
             this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
-            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(130, 32);
+            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.voltarToolStripMenuItem.Text = "&Voltar";
             this.voltarToolStripMenuItem.Click += new System.EventHandler(this.VoltarToolStripMenuItem_Click);
             // 
@@ -4569,7 +4569,7 @@ namespace BomDia
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.98829F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.07494F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.028571F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 549F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 552F));
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel3, 3, 0);
             this.tableLayoutPanel5.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.CheckBoxIntegrador, 0, 0);
@@ -4593,12 +4593,12 @@ namespace BomDia
             this.tableLayoutPanel3.Controls.Add(this.checkBoxExibirPrévia, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.toolStrip1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(841, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(837, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(550, 40);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(554, 40);
             this.tableLayoutPanel3.TabIndex = 12;
             // 
             // checkBoxExibirPrévia
@@ -4673,9 +4673,9 @@ namespace BomDia
             this.panel2.Controls.Add(this.bindingNavigator1);
             this.panel2.Controls.Add(this.BindingExclui);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(129, 3);
+            this.panel2.Location = new System.Drawing.Point(128, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(701, 34);
+            this.panel2.Size = new System.Drawing.Size(698, 34);
             this.panel2.TabIndex = 19;
             // 
             // ButtonMoveLista
@@ -4686,7 +4686,7 @@ namespace BomDia
             this.ButtonMoveLista.ForeColor = System.Drawing.Color.Blue;
             this.ButtonMoveLista.Image = ((System.Drawing.Image)(resources.GetObject("ButtonMoveLista.Image")));
             this.ButtonMoveLista.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ButtonMoveLista.Location = new System.Drawing.Point(504, -1);
+            this.ButtonMoveLista.Location = new System.Drawing.Point(501, -1);
             this.ButtonMoveLista.Margin = new System.Windows.Forms.Padding(0);
             this.ButtonMoveLista.Name = "ButtonMoveLista";
             this.ButtonMoveLista.Size = new System.Drawing.Size(191, 38);
