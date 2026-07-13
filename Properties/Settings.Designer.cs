@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BomDia.Properties {
+namespace Vida.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

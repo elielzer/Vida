@@ -1,5 +1,4 @@
-﻿using BomDia;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
@@ -271,7 +270,7 @@ namespace BomDia
                 MSGtoolStripStatusLabel.Text = "Anexada a tarefa no arquivo XML " +
                     DateTime.Now.ToString();
 
-                this.PictureBoxEditar.Image = global::BomDia.Properties.Resources.CLIP07;
+                this.PictureBoxEditar.Image = global::Vida.Properties.Resources.CLIP07;
             }
             catch
             {
@@ -305,7 +304,7 @@ namespace BomDia
             ActiveControl = OQuePretendido;
             MSGtoolStripStatusLabel.Text = "Esboço...";
             this.PictureBoxEditar.Image =
-                global::BomDia.Properties.Resources.NEW;
+                global::Vida.Properties.Resources.NEW;
             label1.Text = "Novo item..."; label5.Text = "";
             Old_label = label1.Text;
             bindingNavigatorAddNewItem.Enabled = false;
@@ -365,7 +364,7 @@ namespace BomDia
                 DiaBomDiaLabel.Text = "Em Pauta".PadLeft(10);
                 groupBox2.Text = "Tempo Real".PadLeft(15);
                 //global::BomDia.Properties.Resources.Edit1;
-                this.DiaBomDiaLabel.BackgroundImage = global::BomDia.Properties.Resources.MOON05;
+                this.DiaBomDiaLabel.BackgroundImage = global::Vida.Properties.Resources.MOON05;
                 if (bindingNavigatorAddNewItem.Enabled == false)
                 { bindingNavigatorAddNewItem.Enabled = true; }
                 if (bindingNavigatorAddNewItem.Text != "&Inserir")
@@ -463,7 +462,7 @@ namespace BomDia
         {
 
 
-            this.PictureBoxEditar.Image = global::BomDia.Properties.Resources.Edit1;
+            this.PictureBoxEditar.Image = global::Vida.Properties.Resources.Edit1;
             //this.label1.Text = (string)"Prompt";
             if (DataGridView1.CurrentRow == null) //quando a posição está em linha nova
             {
@@ -615,7 +614,7 @@ namespace BomDia
 
             label1.Text = "Escrever item";
             Old_label = label1.Text;
-            this.PictureBoxEditar.Image = global::BomDia.Properties.Resources.NEW;
+            this.PictureBoxEditar.Image = global::Vida.Properties.Resources.NEW;
 
         }
 
@@ -807,46 +806,6 @@ namespace BomDia
         {
 
         }
-
-        /* Transportar o registro correspondente para o tempo real.*/
-        private void DataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int i = e.RowIndex;
-            if (e.ColumnIndex == 0)
-            {
-                if (Convert.ToBoolean(DataGridView1.Rows[i].Cells[8].Value) == false)
-                {
-                    DataGridView1.Rows[i].Cells[8].Value = true;
-
-                }
-                // Migrar a linha atual
-                DataRow Row;
-                Row = BomDiaTarefas.NewRow();
-                Row["QUANDO"] = DateTime.Today.ToShortDateString();
-                Row["OQUE"] = DataGridView1.Rows[i].Cells[1].Value; //4ª col
-                Row["PORQUE"] = DataGridView1.Rows[i].Cells[4].Value; //5ª col
-
-
-                Row["PESO"] = DataGridView1.Rows[i].Cells[5].Value; //6ª col
-                Row["CRITÉRIO"] = DataGridView1.Rows[i].Cells[6].Value; //7ª col
-                Row["DIAMARCADO"] = DataGridView1.Rows[i].Cells[3].Value; //3ª col
-                Row["Pasta"] = DataGridView1.Rows[i].Cells[9].Value;
-                Row["User"] = Responsável.Text;
-                toolStripStatusLabelUsuário.Text = Responsável.Text;  
-                // Índice
-                BomDiaTarefas.Rows.Add(Row);
-                ContadorDeClique += 1;
-
-                string MsgTexto =
-                    DataGridView1.Rows[i].Cells[0].Value.ToString();
-
-                label1.Text = Old_label + "(" + ContadorDeClique + ")";
-                MsgTexto = "Migrado IND(" + MsgTexto + ") para o tempo real.";
-                MSGtoolStripStatusLabel.Text = "Ok. " + MsgTexto;
-                // Desmarcar linha
-                DataGridView1.Rows[i].Cells[8].Value = false;
-            }
-        }
         private void HideForm()
         {
             if (pad == null)
@@ -960,7 +919,7 @@ namespace BomDia
 
                 TarefasBindingSource.EndEdit();
                 TarefasDataSet.AcceptChanges();
-                this.PictureBoxEditar.Image = global::BomDia.Properties.Resources.CLIP07;
+                this.PictureBoxEditar.Image = global::Vida.Properties.Resources.CLIP07;
             }
             catch { return; }
 
@@ -1002,7 +961,7 @@ namespace BomDia
                 switch (toolStripStatusLabel1.Tag.ToString())
                 {
                     case "Apagado":
-                        toolStripStatusLabel1.Image = global::BomDia.Properties.Resources.LIGHTON;
+                        toolStripStatusLabel1.Image = global::Vida.Properties.Resources.LIGHTON;
                         toolStripStatusLabel1.Tag = "Aceso";
                         DataGridView1.BackgroundColor = Color.White;
                         DataGridView1.DefaultCellStyle.BackColor = Color.White;
@@ -1010,7 +969,7 @@ namespace BomDia
                         break;
 
                     case "Aceso":
-                        toolStripStatusLabel1.Image = global::BomDia.Properties.Resources.LIGHTOFF;
+                        toolStripStatusLabel1.Image = global::Vida.Properties.Resources.LIGHTOFF;
                         dataGridView1.DefaultCellStyle.BackColor = Color.FromArgb(50, 10, 100);
                         DataGridView1.ForeColor = Color.White;
                         toolStripStatusLabel1.Tag = "Apagado";
@@ -1057,7 +1016,7 @@ namespace BomDia
 
         public void DefinirStatus()
         {
-            PictureBoxEditar.Image = global::BomDia.Properties.Resources.NOTE14;
+            PictureBoxEditar.Image = global::Vida.Properties.Resources.NOTE14;
             if (label1.Text != "...")
             {
                 label1.Text = "...";
@@ -1073,7 +1032,7 @@ namespace BomDia
 
         private void DataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
-            PictureBoxEditar.Image = global::BomDia.Properties.Resources.NOTE14;
+            PictureBoxEditar.Image = global::Vida.Properties.Resources.NOTE14;
         }
 
         private void OQuePretendido_KeyPress(object sender, KeyPressEventArgs e)
@@ -1151,7 +1110,7 @@ namespace BomDia
             switch (toolStripStatusLabel1.Tag.ToString())
             {
                 case "Apagado":
-                    toolStripStatusLabel1.Image = global::BomDia.Properties.Resources.LIGHTON;
+                    toolStripStatusLabel1.Image = global::Vida.Properties.Resources.LIGHTON;
                     toolStripStatusLabel1.Tag = "Aceso";
                     this.DataGridView1.BackgroundColor = Color.White;
                     this.DataGridView1.DefaultCellStyle.BackColor = Color.White;
@@ -1159,7 +1118,7 @@ namespace BomDia
                     break;
 
                 case "Aceso":
-                    toolStripStatusLabel1.Image = global::BomDia.Properties.Resources.LIGHTOFF;
+                    toolStripStatusLabel1.Image = global::Vida.Properties.Resources.LIGHTOFF;
                     this.DataGridView1.DefaultCellStyle.BackColor = Color.FromArgb(50, 10, 100);
                     this.DataGridView1.ForeColor = Color.White;
                     toolStripStatusLabel1.Tag = "Apagado";
@@ -1228,7 +1187,7 @@ namespace BomDia
                 MSGtoolStripStatusLabel.Text = "Anexada a tarefa no arquivo XML " +
                     DateTime.Now.ToString();
 
-                this.PictureBoxEditar.Image = global::BomDia.Properties.Resources.Edit1;
+                this.PictureBoxEditar.Image = global::Vida.Properties.Resources.Edit1;
                 label1.Text = "Prompt".ToUpper(); Old_label = label1.Text;
 
                 if (ContadorDeClique > 0)
@@ -1322,6 +1281,53 @@ namespace BomDia
         private void atualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FiltraDadosMarcados();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DataGridView MinhaGrade = DataGridView1 as DataGridView; 
+            DataGridViewRow MinhaLinha = DataGridView1.CurrentRow;
+            DataGridViewCell MinhaCélula = MinhaLinha.Cells[0];
+            if (MinhaGrade == null) { return; }
+
+            int i = MinhaCélula.RowIndex;
+            if (MinhaCélula.ColumnIndex == 0)
+            {
+                if (Convert.ToBoolean(DataGridView1.Rows[i].Cells[8].Value) == false)
+                {
+                    DataGridView1.Rows[i].Cells[8].Value = true;
+
+                }
+                // Migrar a linha atual
+                DataRow Row;
+                Row = BomDiaTarefas.NewRow();
+                Row["QUANDO"] = DateTime.Today.ToShortDateString();
+                Row["OQUE"] = DataGridView1.Rows[i].Cells[1].Value; //4ª col
+                Row["PORQUE"] = DataGridView1.Rows[i].Cells[4].Value; //5ª col
+
+
+                Row["PESO"] = DataGridView1.Rows[i].Cells[5].Value; //6ª col
+                Row["CRITÉRIO"] = DataGridView1.Rows[i].Cells[6].Value; //7ª col
+                Row["DIAMARCADO"] = DataGridView1.Rows[i].Cells[3].Value; //3ª col
+                Row["Pasta"] = DataGridView1.Rows[i].Cells[9].Value;
+                Row["User"] = Responsável.Text;
+                toolStripStatusLabelUsuário.Text = Responsável.Text;
+                // Índice
+                BomDiaTarefas.Rows.Add(Row);
+                ContadorDeClique += 1;
+
+                string MsgTexto =
+                    DataGridView1.Rows[i].Cells[0].Value.ToString();
+
+                label1.Text = Old_label + "(" + ContadorDeClique + ")";
+                MsgTexto = "Migrado IND(" + MsgTexto + ") para o tempo real.";
+                MSGtoolStripStatusLabel.Text = "Ok. " + MsgTexto;
+                // Desmarcar linha
+                DataGridView1.Rows[i].Cells[8].Value = false;
+            }
+
+
+
         }
     }
 }
