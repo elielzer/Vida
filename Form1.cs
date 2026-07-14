@@ -70,32 +70,37 @@ namespace BomDia
             Xloc = Location.X; Yloc = Location.Y;  LarguraForm = Width; AlturaForm = Height;
 
             // Layout mini janela
-            Program.DiaBomDiaX = this.Location.X + this.Width / 2 + 70;
-            Program.DiaBomDiaY = this.Location.Y + 20;
+            //Program.DiaBomDiaX = this.Location.X + this.Width / 2 + 70;
+            //Program.DiaBomDiaY = this.Location.Y + 20;
 
 
-            FormBorderStyle = FormBorderStyle.None;  StatusStripBomDia.Visible = false;
+            //FormBorderStyle = FormBorderStyle.None;
+            //StatusStripBomDia.Visible = false;
             LarguraReduzida =
                 (int)(((tableLayoutPanel2.Width * 1.03)));
 
             AlturaReduzida =
                 (int)(tableLayoutPanel2.Height * 1.05);
 
-            Width = LarguraReduzida;
-            this.BackColor = Color.Black; this.BackColor = Color.Black;
-            this.SemanaToolStripButton.ForeColor = Color.Yellow;
+            //Width = LarguraReduzida;
+            //this.BackColor = Color.Black; this.BackColor = Color.Black;
+            //this.SemanaToolStripButton.ForeColor = Color.Yellow;
             // Controles invisíveis
             DetalheUsuário.Hide(); PastaOculto.Hide(); label1.Text = "Desabilitado"; Old_label = label1.Text;
-            BindingNavegador.Hide(); Responsável.Hide();
+            //BindingNavegador.Hide(); 
+            Responsável.Hide();
 
 
             // Transição altura da mini janela
-            splitContainer1.Panel2Collapsed = true;  Height = AlturaReduzida;
+            //splitContainer1.Panel2Collapsed = true;  
+            //Height = AlturaReduzida;
 
-            Height = AlturaReduzida + DataHoje.Height;  timer2.Enabled = true; timer2.Stop(); timer2.Start();
+            //Height = AlturaReduzida + DataHoje.Height;  
+            timer2.Enabled = true; timer2.Stop(); timer2.Start();
 
             // Mostra a data do dia
-            Location = new Point(1050, 0); ListaDeDatas.Text = DateTime.Today.ToShortDateString();
+            //Location = new Point(1050, 0);
+            ListaDeDatas.Text = DateTime.Today.ToShortDateString();
 
             // Selecionar dados a apresentar conforme critério
             TarefasBindingSource.Filter =  String.Format("QUANDO = '{0:dd/MM/yyyy}'", ListaDeDatas.Text);
@@ -593,7 +598,7 @@ namespace BomDia
         private void Timer2_Tick(object sender, EventArgs e)
         {
 
-            Height = AlturaReduzida;
+            //Height = AlturaReduzida;
             DataHoje.Visible = false;
             timer2.Stop();
 
@@ -816,7 +821,7 @@ namespace BomDia
             {
 
                 pad.Activate();
-                pad.Dispose();
+                pad.Hide();
 
             }
         }
@@ -845,34 +850,33 @@ namespace BomDia
                 pad.TopLevel = true;
                 pad.Portal +=
                     (s, Stexto) => ListaDeDatas.Text = Stexto; // Assina o evento
+                pad.Show();
                 return;
             }
+            else
+            {
+                pad.Show();
+            }
+
         }
 
         private void DataGridView1_MouseEnter(object sender, EventArgs e)
         {
 
-            if (Program.CharValue == (char)27)
-            {
-                Program.CharValue = (char)0;
-                SendKeys.Send("{ESC}"); return;
-            }
-
             if (pad == null)
             {
                 pad = new Pad();
 
-                pad.Location =
-                    new Point(Program.DiaBomDiaX, Program.DiaBomDiaY);
+                //pad.Location =
+                //    new Point(Program.DiaBomDiaX, Program.DiaBomDiaY);
                 pad.Show();
-
 
             }
             else if (pad.IsDisposed)
             {
                 pad = new Pad();
-                pad.Location =
-                    new Point(Program.DiaBomDiaX, Program.DiaBomDiaY);
+                //pad.Location =
+                //    new Point(Program.DiaBomDiaX, Program.DiaBomDiaY);
                 pad.Show();
             }
 
@@ -888,7 +892,7 @@ namespace BomDia
         {
             // Desativar o formulário secundário.
 
-            Program.Bomdia.MSGtoolStripStatusLabel.Text = "Bom Dia.";
+            Program.Bomdia.MSGtoolStripStatusLabel.Text = "Vida.";
 
         }
 
@@ -980,31 +984,6 @@ namespace BomDia
 
         private void voltarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            // Redesenhar a janela para forma reduzida.
-
-            StatusStripBomDia.Hide();
-
-            this.WindowState = FormWindowState.Normal;
-            FormBorderStyle = FormBorderStyle.None;
-
-            Xloc = Location.X; Yloc = Location.Y;
-            LarguraForm = Width; AlturaForm = Height;
-
-            /* Muda formato */
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.CustomFormat = "HH:mm";
-            dateTimePicker1.Font = new Font("Calibri", 22F, FontStyle.Bold);
-
-            Width = LarguraReduzida;
-            Height = (int)(((ushort)dateTimePicker1.Height) * 1.1);
-
-            this.BackColor = Color.Black; Location = new Point(1100, 0);
-            this.SemanaToolStripButton.ForeColor = Color.Yellow;
-            cortinaToolStripMenuItem.Enabled = true;
-
-            Program.Bomdia.TopMost = true;
-
-
             // Ocultar o pad
             HideForm();
         }
@@ -1328,6 +1307,11 @@ namespace BomDia
 
 
 
+        }
+
+        private void abrirOPadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirPad();
         }
     }
 }

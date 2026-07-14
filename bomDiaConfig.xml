@@ -8,17 +8,17 @@
 	<Config>
 		<Segmento>1</Segmento>
 		<Tipo>Pastas</Tipo>
-		<Valor>C:\Users\elielzer\Documents\Bom-Dia\BomRepos</Valor>
+		<Valor>C:\Users\elielzer\Documents\Vida\BomRepos</Valor>
 	</Config>
 	<Config>
 		<Segmento>2</Segmento>
 		<Tipo>BancoDados</Tipo>
-		<Valor>C:/Users/elielzer/Documents/Bom-Dia/XmlDoc.xml</Valor>
+		<Valor>C:/Users/elielzer/Documents/Vida/XmlDoc.xml</Valor>
 	</Config>
 	<Config>
 		<Segmento>3</Segmento>
 		<Tipo>Impressos</Tipo>
-		<Valor>C:/Users/elielzer/Documents/Bom-Dia/Impressos</Valor>
+		<Valor>C:/Users/elielzer/Documents/Vida/Impressos</Valor>
 	</Config>
 </dataSetBiblioteca>
 
