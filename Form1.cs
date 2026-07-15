@@ -1239,6 +1239,7 @@ namespace BomDia
                 splitContainer7.Panel1Collapsed = false;
                 checkBoxExibirPrévia.Text = "Prévia ligado";
                 FiltraDadosPrévia();
+                
             }
             ;
         }
