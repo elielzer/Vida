@@ -317,7 +317,7 @@ namespace BomDia
 
         private void abrirToolStripButton_Click(object sender, EventArgs e)
         {
-            tableLayoutPanel6.Enabled = true;
+            //tableLayoutPanel6.Enabled = true;
         }
 
 
