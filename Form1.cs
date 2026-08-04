@@ -102,11 +102,10 @@ namespace BomDia
             TarefasBindingSource.Filter =  String.Format("QUANDO = '{0:dd/MM/yyyy}'", ListaDeDatas.Text);
 
             // Formatação de datas
-            string SemanaComMaiuscula; SemanaComMaiuscula = DateTime.Today.ToString("ddd");
-            SemanaComMaiuscula = SemanaComMaiuscula[0].ToString().ToUpper() +
-                SemanaComMaiuscula[1].ToString() + SemanaComMaiuscula[2].ToString();
+            string SemanaComMaiuscula; SemanaComMaiuscula = DateTime.Today.ToString("dddd");
+            //SemanaComMaiuscula = SemanaComMaiuscula[0].ToString().ToUpper() + SemanaComMaiuscula[1].ToString() + SemanaComMaiuscula[2].ToString();
 
-            SemanaToolStripButton.Text = string.Concat(".", SemanaComMaiuscula);
+            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiuscula);
 
             // Carregar tabela de configuração para dentro da grade
             this.dataGridView3.DataSource = VariáveisGlobais.dataSetBiblioteca;
@@ -381,10 +380,9 @@ namespace BomDia
 
             dateTimePicker1.ResetText();
 
-            string SemanaComMaiuscula = DateTime.Today.ToString("ddd");
-            SemanaComMaiuscula = SemanaComMaiuscula[0].ToString().ToUpper() +
-                SemanaComMaiuscula[1].ToString() + SemanaComMaiuscula[2].ToString();
-            SemanaToolStripButton.Text = string.Concat(".", SemanaComMaiuscula);
+            string SemanaComMaiuscula = DateTime.Today.ToString("dddd");
+            //SemanaComMaiuscula = SemanaComMaiuscula[0].ToString().ToUpper() + SemanaComMaiuscula[1].ToString() + SemanaComMaiuscula[2].ToString();
+            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiuscula);
         }
 
         // Tornar os dados de um registro anterior como o registro para nova data
@@ -993,9 +991,9 @@ namespace BomDia
         public void DefinirStatus()
         {
             PictureBoxEditar.Image = global::Vida.Properties.Resources.NOTE14;
-            if (label1.Text != "...")
+            if (label1.Text != "Organizando")
             {
-                label1.Text = "...";
+                label1.Text = "Organizando";
                 Old_label = label1.Text;
             }
         }
@@ -1023,7 +1021,7 @@ namespace BomDia
 
         private void DiaMarcadoPretendido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            DefinirStatus();
+
         }
 
         private void ComboBoxPorque_KeyPress(object sender, KeyPressEventArgs e)
@@ -1310,6 +1308,11 @@ namespace BomDia
         private void abrirOPadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirPad();
+        }
+
+        private void DiaMarcadoPretendido_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            DefinirStatus();
         }
     }
 }
