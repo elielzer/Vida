@@ -83,17 +83,13 @@ namespace BomDia
                 (int)(tableLayoutPanel2.Height * 1.05);
 
             //Width = LarguraReduzida;
-            //this.BackColor = Color.Black; this.BackColor = Color.Black;
-            //this.SemanaToolStripButton.ForeColor = Color.Yellow;
+
             // Controles invisíveis
             DetalheUsuário.Hide(); PastaOculto.Hide(); label1.Text = "Desabilitado"; Old_label = label1.Text;
             //BindingNavegador.Hide(); 
             Responsável.Hide();
 
 
-            // Transição altura da mini janela
-            //splitContainer1.Panel2Collapsed = true;  
-            //Height = AlturaReduzida;
 
             //Height = AlturaReduzida + DataHoje.Height;  
             timer2.Enabled = true; timer2.Stop(); timer2.Start();
@@ -346,7 +342,7 @@ namespace BomDia
             if (dataPara > dataHoje)
             {
                 DiaBomDiaLabel.Text = "Programático".ToUpper();
-                this.DiaBomDiaLabel.BackgroundImage = null;
+                this.DiaBomDiaLabel.Image = null;
                 bindingNavigatorAddNewItem.Text = "&Criar";
                 if (bindingNavigatorAddNewItem.Text != "&Criar")
                 { bindingNavigatorAddNewItem.Text = "&Criar"; }
@@ -357,7 +353,7 @@ namespace BomDia
             if (dataPara < dataHoje)
             {
                 DiaBomDiaLabel.Text = "Em log".ToUpper();
-                this.DiaBomDiaLabel.BackgroundImage = null;
+                this.DiaBomDiaLabel.Image = null;
                 if (bindingNavigatorAddNewItem.Enabled != false)
                 { bindingNavigatorAddNewItem.Enabled = false; }
             }
@@ -369,7 +365,8 @@ namespace BomDia
                 DiaBomDiaLabel.Text = "Em Pauta".PadLeft(10);
                 groupBox2.Text = "Tempo Real".PadLeft(15);
                 //global::BomDia.Properties.Resources.Edit1;
-                this.DiaBomDiaLabel.BackgroundImage = global::Vida.Properties.Resources.MOON05;
+                this.DiaBomDiaLabel.Image = global::Vida.Properties.Resources.MOON05;
+                
                 if (bindingNavigatorAddNewItem.Enabled == false)
                 { bindingNavigatorAddNewItem.Enabled = true; }
                 if (bindingNavigatorAddNewItem.Text != "&Inserir")
