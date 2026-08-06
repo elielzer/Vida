@@ -69,13 +69,6 @@ namespace BomDia
 
             Xloc = Location.X; Yloc = Location.Y;  LarguraForm = Width; AlturaForm = Height;
 
-            // Layout mini janela
-            //Program.DiaBomDiaX = this.Location.X + this.Width / 2 + 70;
-            //Program.DiaBomDiaY = this.Location.Y + 20;
-
-
-            //FormBorderStyle = FormBorderStyle.None;
-            //StatusStripBomDia.Visible = false;
             LarguraReduzida =
                 (int)(((tableLayoutPanel2.Width * 1.03)));
 
@@ -88,14 +81,11 @@ namespace BomDia
             DetalheUsuário.Hide(); PastaOculto.Hide(); label1.Text = "Desabilitado"; Old_label = label1.Text;
             //BindingNavegador.Hide(); 
             Responsável.Hide();
+            checkBoxExibirPrévia.Hide();
 
-
-
-            //Height = AlturaReduzida + DataHoje.Height;  
             timer2.Enabled = true; timer2.Stop(); timer2.Start();
 
             // Mostra a data do dia
-            //Location = new Point(1050, 0);
             ListaDeDatas.Text = DateTime.Today.ToShortDateString();
 
             // Selecionar dados a apresentar conforme critério
@@ -116,20 +106,18 @@ namespace BomDia
             checkBoxExibirPrévia.Text = "Prévia ligado";
             checkBoxExibirPrévia.Refresh();
 
-
             // Mostrar dados marcados
             FiltraDadosMarcados();
 
             // Preencho o nome do usuário na barra de status
             toolStripStatusLabelUsuário.Text = "Usuário atual: ".ToUpper() + Usuário.ToUpper();
 
-
             //Classificar dados
             string rowFilter = "QUANDO > '" + DateTime.Today + "'";
             bindingSourcePrévia.Filter = rowFilter;
             bindingSourcePrévia.Sort = "QUANDO";
             dataGridViewPrévia.FirstDisplayedScrollingRowIndex = 0;
-            ;
+  
         }
 
         public void FiltraDadosPrévia()
@@ -782,12 +770,13 @@ namespace BomDia
         private void ShowLineJoin_tableLayoutPanel9(PaintEventArgs e)
         {
             // Create pen.
-            Pen bluePen = new Pen(Color.Black, 1);
+            Pen bluePen = new Pen(Color.Purple, 1);
             bluePen.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             // Create points that define line.
+            //new PointF(splitContainer5.Left + textBox1.Width,
             PointF point1 =
-                new PointF(splitContainer5.Left + textBox1.Width,
-                splitContainer5.Top + splitContainer5.Height - tableLayoutPanel11.Height
+                new PointF(splitContainer5.Left + tableLayoutPanel16.Width,
+                splitContainer5.Top + splitContainer5.Height - tableLayoutPanel11.Height-1
                );
 
             PointF point2 =
@@ -990,6 +979,7 @@ namespace BomDia
 
         public void DefinirStatus()
         {
+            if(toolStripButton16.Visible == true) { return; }
             PictureBoxEditar.Image = global::Vida.Properties.Resources.NOTE14;
             if (label1.Text != "Organizando")
             {
@@ -1102,15 +1092,13 @@ namespace BomDia
 
         private void toolStripButton16_Click(object sender, EventArgs e)
         {
-            //tableLayoutPanel6.Enabled = true;
-
             // Desbloquear elementos
             OQuePretendido.Enabled = true; QuandoPrevisto.Enabled = true;
             ComboBoxPorque.Enabled = true; flowLayoutPanel4.Enabled = true;
             ButtonAnexa.Enabled = true; bindingNavigatorDeleteItem.Enabled = true;
             ButtonAnexa.Enabled = true; BindingExclui.Enabled = true;
             PictureBoxEditar.Enabled = true;
-            //BindingNavigatorNovo.Enabled = true;
+
             
             
             label1.Text = "Prompt".ToUpper();   Old_label = label1.Text;
@@ -1226,12 +1214,12 @@ namespace BomDia
         {
             if(checkBoxExibirPrévia.Checked == false )
             {
-                splitContainer7.Panel1Collapsed = true;
+                splitContainer7.Panel2Collapsed = true;
                 checkBoxExibirPrévia.Text = "Prévia desligado";
             }
             else
             {
-                splitContainer7.Panel1Collapsed = false;
+                splitContainer7.Panel2Collapsed = false;
                 checkBoxExibirPrévia.Text = "Prévia ligado";
                 FiltraDadosPrévia();
                 
@@ -1313,6 +1301,20 @@ namespace BomDia
         private void DiaMarcadoPretendido_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             DefinirStatus();
+        }
+
+        private void préviaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (préviaToolStripMenuItem.Checked == false)
+            {
+                checkBoxExibirPrévia.Visible = true;
+                préviaToolStripMenuItem.CheckState = CheckState.Checked;
+            }
+            else
+            {
+                checkBoxExibirPrévia.Hide();
+                préviaToolStripMenuItem.CheckState = CheckState.Unchecked;
+            }
         }
     }
 }
