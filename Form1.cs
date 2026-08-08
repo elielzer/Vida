@@ -19,8 +19,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BomDia
 {
+    
     public partial class BomDia : Form
     {
+        
         int LarguraForm = 0; int AlturaForm = 0;  int Xloc = 0; int Yloc = 0; int LarguraReduzida = 0;
 
         Pad pad; // Abre o formulário suspenso especial
@@ -42,8 +44,10 @@ namespace BomDia
 
         public DateTime dataHoje; public DateTime dataPara;  public int ContadorDeClique = 0; public string Old_label = "";
 
+        
         public BomDia()
         {
+            
             InitializeComponent(); splitContainer2.Panel1Collapsed = true;
 
             // Restrição no comportamento de alguns controles
@@ -60,6 +64,8 @@ namespace BomDia
         }
         public void BomDia_Load(object sender, EventArgs e)
         {
+            tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
+            tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
             TarefasDataSet.ReadXml(BancoDados, XmlReadMode.ReadSchema);
             //
             sender = this.ListaDeDatas;
@@ -524,36 +530,7 @@ namespace BomDia
                     }
                     else
                     {
-
-                        switch (DataSemana.DayOfWeek)
-                        {
-                            case DayOfWeek.Monday:
-                                label5.Text = "segunda-feira".ToUpper();
-                                break;
-
-                            case DayOfWeek.Tuesday:
-                                label5.Text = "terça-feira".ToUpper();
-                                break;
-
-                            case DayOfWeek.Wednesday:
-                                label5.Text = "quarta-feira".ToUpper();
-                                break;
-                            case DayOfWeek.Thursday:
-                                label5.Text = "quinta-feira".ToUpper();
-                                break;
-                            case DayOfWeek.Friday:
-                                label5.Text = "sexta-feira".ToUpper();
-                                break;
-                            case DayOfWeek.Saturday:
-                                label5.Text = "⮡ sábado".ToUpper();
-                                break;
-                            case DayOfWeek.Sunday:
-                                label5.Text = "domingo".ToUpper();
-                                break;
-                            default:
-                                label5.Text = "Não definida".ToUpper();
-                                break;
-                        }
+                        label5.Text = DayOfWeek.Monday.ToString("dddd").ToUpper(); //"segunda-feira".ToUpper();
                     }
                 }
                 catch (Exception)
@@ -933,38 +910,8 @@ namespace BomDia
             splitContainer2.Panel1Collapsed = false;
         }
 
-        //private void tableLayoutPanel14_Paint(object sender, PaintEventArgs e)
-        //{
-        //    ShowLineJoin(e);
-        //}
 
-        private DataGridView GetDataGridView1()
-        {
-            return DataGridView1;
-        }
 
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e, DataGridView dataGridView1)
-        {
-            {
-                switch (toolStripStatusLabel1.Tag.ToString())
-                {
-                    case "Apagado":
-                        toolStripStatusLabel1.Image = global::Vida.Properties.Resources.LIGHTON;
-                        toolStripStatusLabel1.Tag = "Aceso";
-                        DataGridView1.BackgroundColor = Color.White;
-                        DataGridView1.DefaultCellStyle.BackColor = Color.White;
-                        DataGridView1.ForeColor = Color.Black;
-                        break;
-
-                    case "Aceso":
-                        toolStripStatusLabel1.Image = global::Vida.Properties.Resources.LIGHTOFF;
-                        dataGridView1.DefaultCellStyle.BackColor = Color.FromArgb(50, 10, 100);
-                        DataGridView1.ForeColor = Color.White;
-                        toolStripStatusLabel1.Tag = "Apagado";
-                        break;
-                }
-            }
-        }
 
         private void voltarToolStripMenuItem1_Click(object sender, EventArgs e)
         {

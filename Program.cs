@@ -20,6 +20,7 @@ namespace BomDia
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
         [STAThread]
+        //[MTAThread]
         //static void Main()
         // Definição do delegate
 
@@ -64,6 +65,7 @@ namespace BomDia
         }
         public static int DiaBomDiaX = 0; public static int DiaBomDiaY = 0;
 
+        
 
     }
     public static class VariáveisGlobais
