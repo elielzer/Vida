@@ -75,11 +75,9 @@ namespace BomDia
 
             Xloc = Location.X; Yloc = Location.Y;  LarguraForm = Width; AlturaForm = Height;
 
-            LarguraReduzida =
-                (int)(((tableLayoutPanel2.Width * 1.03)));
+            //LarguraReduzida =                (int)(((tableLayoutPanel2.Width * 1.03)));
 
-            AlturaReduzida =
-                (int)(tableLayoutPanel2.Height * 1.05);
+            //AlturaReduzida =                (int)(tableLayoutPanel2.Height * 1.05);
 
             //Width = LarguraReduzida;
 
@@ -91,7 +89,7 @@ namespace BomDia
 
             timer2.Enabled = true; timer2.Stop(); timer2.Start();
 
-            // Mostra a data do dia
+            // Força o contexto para a data do dia
             ListaDeDatas.Text = DateTime.Today.ToShortDateString();
 
             // Selecionar dados a apresentar conforme critério
@@ -356,7 +354,7 @@ namespace BomDia
                     "Arquivo de dados: " + BancoDados;
 
                 DiaBomDiaLabel.Text = "Em Pauta".PadLeft(10);
-                groupBox2.Text = "Tempo Real".PadLeft(15);
+                label4.Text = "Tempo Real";
                 //global::BomDia.Properties.Resources.Edit1;
                 this.DiaBomDiaLabel.Image = global::Vida.Properties.Resources.MOON05;
                 
@@ -375,7 +373,6 @@ namespace BomDia
             dateTimePicker1.ResetText();
 
             string SemanaComMaiuscula = DateTime.Today.ToString("dddd");
-            //SemanaComMaiuscula = SemanaComMaiuscula[0].ToString().ToUpper() + SemanaComMaiuscula[1].ToString() + SemanaComMaiuscula[2].ToString();
             SemanaToolStripButton.Text = string.Concat("", SemanaComMaiuscula);
         }
 
@@ -530,7 +527,7 @@ namespace BomDia
                     }
                     else
                     {
-                        label5.Text = DayOfWeek.Monday.ToString("dddd").ToUpper(); //"segunda-feira".ToUpper();
+                        label5.Text = DataSemana.ToString("dddd").ToUpper(); //"segunda-feira".ToUpper();
                     }
                 }
                 catch (Exception)
@@ -559,7 +556,8 @@ namespace BomDia
         {
 
             //Height = AlturaReduzida;
-            DataHoje.Visible = false;
+            //DataHoje.Visible = false;
+            DataHoje.Hide();
             timer2.Stop();
 
             // definir a propriedade de um menu suspenso.
@@ -1103,6 +1101,9 @@ namespace BomDia
                 {
                     ContadorDeClique = 0;
                 }
+
+                // Força o contexto para a data do dia
+                ListaDeDatas.Text = DateTime.Today.ToShortDateString();
             }
 
             catch (Exception ex)
@@ -1262,6 +1263,11 @@ namespace BomDia
                 checkBoxExibirPrévia.Hide();
                 préviaToolStripMenuItem.CheckState = CheckState.Unchecked;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            atualizarToolStripMenuItem.PerformClick();
         }
     }
 }
