@@ -163,6 +163,26 @@ namespace Vida.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EXCLEM {
+            get {
+                object obj = ResourceManager.GetObject("EXCLEM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EXCLEM2 {
+            get {
+                object obj = ResourceManager.GetObject("EXCLEM2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Filter {
             get {
                 object obj = ResourceManager.GetObject("Filter", resourceCulture);
@@ -203,6 +223,16 @@ namespace Vida.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LEAF {
+            get {
+                object obj = ResourceManager.GetObject("LEAF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LIGHTOFF {
             get {
                 object obj = ResourceManager.GetObject("LIGHTOFF", resourceCulture);
@@ -216,6 +246,16 @@ namespace Vida.Properties {
         internal static System.Drawing.Bitmap LIGHTON {
             get {
                 object obj = ResourceManager.GetObject("LIGHTON", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mark {
+            get {
+                object obj = ResourceManager.GetObject("mark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

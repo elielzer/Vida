@@ -64,6 +64,7 @@ namespace BomDia
         }
         public void BomDia_Load(object sender, EventArgs e)
         {
+            this.Text = this.Text + " " + Application.ProductVersion.ToString();
             tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
             tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
             TarefasDataSet.ReadXml(BancoDados, XmlReadMode.ReadSchema);
@@ -353,10 +354,11 @@ namespace BomDia
                 MSGtoolStripStatusLabel.Text =
                     "Arquivo de dados: " + BancoDados;
 
-                DiaBomDiaLabel.Text = "Em Pauta".PadLeft(10);
+                DiaBomDiaLabel.Text = "Em Pauta".ToUpper();
                 label4.Text = "Tempo Real";
                 //global::BomDia.Properties.Resources.Edit1;
-                this.DiaBomDiaLabel.Image = global::Vida.Properties.Resources.MOON05;
+                
+                this.DiaBomDiaLabel.Image = global::Vida.Properties.Resources.mark;
                 
                 if (bindingNavigatorAddNewItem.Enabled == false)
                 { bindingNavigatorAddNewItem.Enabled = true; }
@@ -738,27 +740,30 @@ namespace BomDia
             e.Graphics.DrawLine(bluePen, point1, point2);
         }
 
-        //private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        //{
-        //    ShowLineJoin(e);
-        //}
         private void ShowLineJoin_tableLayoutPanel9(PaintEventArgs e)
         {
+            // Traçar um linha horizontal
             // Create pen.
-            Pen bluePen = new Pen(Color.Purple, 1);
+            Pen bluePen = new Pen(Color.Gray, 1);
             bluePen.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             // Create points that define line.
-            //new PointF(splitContainer5.Left + textBox1.Width,
             PointF point1 =
-                new PointF(splitContainer5.Left + tableLayoutPanel16.Width,
-                splitContainer5.Top + splitContainer5.Height - tableLayoutPanel11.Height-1
+                new PointF(splitContainer5.Left+42,
+                splitContainer5.Top + splitContainer5.Height -1
                );
-
+            
             PointF point2 =
-            new PointF(point1.X + tableLayoutPanel9.Width, point1.Y);
+            new PointF(point1.X + tableLayoutPanel9.Width-100, point1.Y);
 
             // Draw line to screen.
             e.Graphics.DrawLine(bluePen, point1, point2);
+
+            // Traçar uma linha vertical.
+            point2 = new PointF(point1.X, point1.Y);
+            point1 =  new PointF(point1.X, splitContainer5.Top);
+            // Draw line.
+            e.Graphics.DrawLine(bluePen, point1, point2);
+
         }
 
         private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
