@@ -375,6 +375,7 @@ namespace BomDia
             dateTimePicker1.ResetText();
 
             string SemanaComMaiuscula = DateTime.Today.ToString("dddd");
+            
             SemanaToolStripButton.Text = string.Concat("", SemanaComMaiuscula);
         }
 
@@ -456,7 +457,7 @@ namespace BomDia
 
 
             this.PictureBoxEditar.Image = global::Vida.Properties.Resources.Edit1;
-            //this.label1.Text = (string)"Prompt";
+            
             if (DataGridView1.CurrentRow == null) //quando a posição está em linha nova
             {
                 try
@@ -854,9 +855,9 @@ namespace BomDia
 
         private void BomDia_Activated(object sender, EventArgs e)
         {
-            // Desativar o formulário secundário.
+            // Desativar o formulário secundário
 
-            Program.Bomdia.MSGtoolStripStatusLabel.Text = "Vida.";
+            Program.Bomdia.MSGtoolStripStatusLabel.Text = "🚩";
 
         }
 
@@ -1051,7 +1052,7 @@ namespace BomDia
 
             
             
-            label1.Text = "Prompt".ToUpper();   Old_label = label1.Text;
+            label1.Text = "".ToUpper();   Old_label = label1.Text;
             toolStripButton16.Visible = false;
 
             // libera a função de inserir
@@ -1100,7 +1101,7 @@ namespace BomDia
                     DateTime.Now.ToString();
 
                 this.PictureBoxEditar.Image = global::Vida.Properties.Resources.Edit1;
-                label1.Text = "Prompt".ToUpper(); Old_label = label1.Text;
+                label1.Text = "".ToUpper(); Old_label = label1.Text;
 
                 if (ContadorDeClique > 0)
                 {
