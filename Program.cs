@@ -4,6 +4,8 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
+using System.Security.Policy;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,6 +17,17 @@ namespace BomDia
 
         public static BomDia Bomdia { get; set; }
         public static Pad pad { get; set; }
+        public static string MeuAssemblyVersion
+        {
+            get
+            {
+                //Console.WriteLine(typeof(BomDia).Assembly.FullName);
+                
+                //return Assembly.GetExecutingAssembly().GetName().Version.ToString();
+                return typeof(BomDia).Assembly.GetName().Version.ToString();
+
+            }
+        }
 
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
@@ -23,7 +36,6 @@ namespace BomDia
         //[MTAThread]
         //static void Main()
         // Definição do delegate
-
         public static void Main()
         {
             Application.EnableVisualStyles();

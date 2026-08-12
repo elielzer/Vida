@@ -64,7 +64,9 @@ namespace BomDia
         }
         public void BomDia_Load(object sender, EventArgs e)
         {
-            this.Text = this.Text + " " + Application.ProductVersion.ToString();
+            this.Text = " Vida " + String.Format("Versão {0}", Program.MeuAssemblyVersion);
+
+
             tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
             tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
             TarefasDataSet.ReadXml(BancoDados, XmlReadMode.ReadSchema);
