@@ -65,7 +65,7 @@ namespace BomDia
         public void BomDia_Load(object sender, EventArgs e)
         {
             this.Text = " Vida " + String.Format("Versão {0}", Program.MeuAssemblyVersion);
-
+            
 
             tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
             tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
@@ -78,11 +78,6 @@ namespace BomDia
 
             Xloc = Location.X; Yloc = Location.Y;  LarguraForm = Width; AlturaForm = Height;
 
-            //LarguraReduzida =                (int)(((tableLayoutPanel2.Width * 1.03)));
-
-            //AlturaReduzida =                (int)(tableLayoutPanel2.Height * 1.05);
-
-            //Width = LarguraReduzida;
 
             // Controles invisíveis
             DetalheUsuário.Hide(); PastaOculto.Hide(); label1.Text = "Desabilitado"; Old_label = label1.Text;
@@ -99,10 +94,9 @@ namespace BomDia
             TarefasBindingSource.Filter =  String.Format("QUANDO = '{0:dd/MM/yyyy}'", ListaDeDatas.Text);
 
             // Formatação de datas
-            string SemanaComMaiuscula; SemanaComMaiuscula = DateTime.Today.ToString("dddd");
-            //SemanaComMaiuscula = SemanaComMaiuscula[0].ToString().ToUpper() + SemanaComMaiuscula[1].ToString() + SemanaComMaiuscula[2].ToString();
+            string SemanaComMaiúscula; SemanaComMaiúscula = DateTime.Today.ToString("dddd");
 
-            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiuscula);
+            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiúscula);
 
             // Carregar tabela de configuração para dentro da grade
             this.dataGridView3.DataSource = VariáveisGlobais.dataSetBiblioteca;
@@ -112,6 +106,7 @@ namespace BomDia
             FiltraDadosPrévia();
             checkBoxExibirPrévia.Text = "Prévia ligado";
             checkBoxExibirPrévia.Refresh();
+            dataGridViewPrévia.FirstDisplayedScrollingRowIndex = 0;
 
             // Mostrar dados marcados
             FiltraDadosMarcados();
@@ -119,12 +114,21 @@ namespace BomDia
             // Preencho o nome do usuário na barra de status
             toolStripStatusLabelUsuário.Text = "Usuário atual: ".ToUpper() + Usuário.ToUpper();
 
-            //Classificar dados
+            //Classificar dados apresentados
             string rowFilter = "QUANDO > '" + DateTime.Today + "'";
             bindingSourcePrévia.Filter = rowFilter;
             bindingSourcePrévia.Sort = "QUANDO";
-            dataGridViewPrévia.FirstDisplayedScrollingRowIndex = 0;
-  
+
+            // Personalizar 
+            if (CheckBoxIntegrador.Checked == true)
+            {
+                toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Apenas entregas correntes.");
+            }
+            else
+            {
+                toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Arquivo geral.");
+            }
+
         }
 
         public void FiltraDadosPrévia()
@@ -315,11 +319,14 @@ namespace BomDia
         {
             if (CheckBoxIntegrador.Checked == true)
             {
-                TarefasBindingSource.Filter = String.Format("QUANDO = '{0:dd/MM/yyyy}'", ListaDeDatas.Text);
+                TarefasBindingSource.Filter = String.Format("QUANDO =" +
+                    " '{0:dd/MM/yyyy}'", ListaDeDatas.Text);
+                toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Apenas entregas correntes.");
             }
             else
             {
                 TarefasBindingSource.Filter = "";
+                toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Arquivo geral.");
             }
         }
 
@@ -356,11 +363,11 @@ namespace BomDia
                 MSGtoolStripStatusLabel.Text =
                     "Arquivo de dados: " + BancoDados;
 
-                DiaBomDiaLabel.Text = "Em Pauta".ToUpper();
-                label4.Text = "Tempo Real";
+                DiaBomDiaLabel.Text = "Em Pauta 📌".ToUpper();
+                label4.Text = "Tempo Real ⌚";
                 //global::BomDia.Properties.Resources.Edit1;
                 
-                this.DiaBomDiaLabel.Image = global::Vida.Properties.Resources.mark;
+                //this.DiaBomDiaLabel.Image = global::Vida.Properties.Resources.mark;
                 
                 if (bindingNavigatorAddNewItem.Enabled == false)
                 { bindingNavigatorAddNewItem.Enabled = true; }
