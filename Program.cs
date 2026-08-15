@@ -102,30 +102,36 @@ namespace BomDia
             dataSetBiblioteca = new DataSet(); var keys = new DataColumn[1];
             Config = new DataTable("Config");
 
-            Coluna1 = new DataColumn();
-            Coluna1.DataType = typeof(int);
-            Coluna1.ColumnName = "Segmento";
-            Coluna1.ReadOnly = false;
-            Coluna1.Unique = true;
-            Coluna1.AutoIncrement = true;
-            Coluna1.AutoIncrementStep = 1;
+            Coluna1 = new DataColumn
+            {
+                DataType = typeof(int),
+                ColumnName = "Segmento",
+                ReadOnly = false,
+                Unique = true,
+                AutoIncrement = true,
+                AutoIncrementStep = 1
+            };
 
 
             Config.Columns.Add(Coluna1);
             keys[0] = Coluna1;
             Config.PrimaryKey = keys;
 
-            Coluna1 = new DataColumn();
-            Coluna1.DataType = typeof(string);
-            Coluna1.ColumnName = "Tipo";
-            Coluna1.ReadOnly = false;
+            Coluna1 = new DataColumn
+            {
+                DataType = typeof(string),
+                ColumnName = "Tipo",
+                ReadOnly = false
+            };
 
             Config.Columns.Add(Coluna1);
 
-            Coluna1 = new DataColumn();
-            Coluna1.DataType = typeof(string);
-            Coluna1.ColumnName = "Valor";
-            Coluna1.ReadOnly = false;
+            Coluna1 = new DataColumn
+            {
+                DataType = typeof(string),
+                ColumnName = "Valor",
+                ReadOnly = false
+            };
 
             Config.Columns.Add(Coluna1);
 

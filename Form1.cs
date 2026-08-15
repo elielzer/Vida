@@ -10,11 +10,14 @@ using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Reflection.Emit;
 using System.Security.Principal;
+using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using System.Xml.Schema;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 
 namespace BomDia
@@ -31,7 +34,7 @@ namespace BomDia
         public string Usuário = WindowsIdentity.GetCurrent().Name.ToString();
 
         //
-        int AlturaReduzida = 0;
+
         int NRow = 0; // Usado na contagem de linhas no datagridview1
         DateTime DataSemana;
 
@@ -65,13 +68,12 @@ namespace BomDia
         public void BomDia_Load(object sender, EventArgs e)
         {
             this.Text = " Vida " + String.Format("Versão {0}", Program.MeuAssemblyVersion);
-            
+            label5.BackColor = splitContainer5.Panel2.BackColor; 
 
             tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
             tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
             TarefasDataSet.ReadXml(BancoDados, XmlReadMode.ReadSchema);
             //
-            sender = this.ListaDeDatas;
 
             // Como esteja a janela do aplicativo 
             DataHoje.Visible = true;   DataHoje.Text = DateTime.Today.ToShortDateString();
@@ -208,8 +210,7 @@ namespace BomDia
 
                 }
 
-                if (pad != null)
-                { pad.Dispose(); }
+                pad?.Dispose();
                 Program.Bomdia.TopMost = true;
 
 
@@ -498,7 +499,12 @@ namespace BomDia
                       upper: DateTime.Today);
                     if (DataGridView1.CurrentRow.Cells[3].Value.ToString() == "")
                     {
-                        label5.Text = "☀" + " " + "agenda do dia".ToUpper();
+
+                        string gkNumber = Char.ConvertFromUtf32(128188);
+                        System.Text.Encoding briefcase = System.Text.Encoding.UTF8;
+                        
+
+                        label5.Text = gkNumber.ToString() +  " " + "agenda do dia".ToUpper();
                         return;
                     }
                     else
@@ -581,7 +587,7 @@ namespace BomDia
             if (PréPorque != "" & PréQuando != "")
             {
                 TarefasBindingSource.CancelEdit();
-                DialogResult dialogResult =
+                var dialogResult =
                     MessageBox.Show("Contexto incompleto", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
                 ; return;
@@ -734,28 +740,16 @@ namespace BomDia
             ;
         }
 
-        private void ShowLineJoin(PaintEventArgs e)
-        {
-            // Create pen.
-            Pen bluePen = new Pen(Color.Black, 100);
-            bluePen.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
 
-            // Create points that define line - linha superior do cabeçalho.
-            PointF point1 =
-                new PointF(tableLayoutPanel9.Left, tableLayoutPanel9.Bottom);
-            PointF point2 =
-            new PointF(PictureBoxEditar.Left, point1.Y);
-
-            // Draw line to screen.
-            e.Graphics.DrawLine(bluePen, point1, point2);
-        }
 
         private void ShowLineJoin_tableLayoutPanel9(PaintEventArgs e)
         {
             // Traçar um linha horizontal
             // Create pen.
-            Pen bluePen = new Pen(Color.Gray, 1);
-            bluePen.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            Pen bluePen = new Pen(Color.Gray, 1)
+            {
+                DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
+            };
             // Create points that define line.
             PointF point1 =
                 new PointF(splitContainer5.Left+42,
@@ -820,8 +814,10 @@ namespace BomDia
 
             if (pad == null)
             {
-                Program.Bomdia.TopMost = false; pad = new Pad();
-                pad.TopLevel = true;
+                Program.Bomdia.TopMost = false; pad = new Pad
+                {
+                    TopLevel = true
+                };
                 pad.Portal +=
                     (s, Stexto) => ListaDeDatas.Text = Stexto; // Assina o evento
                 pad.Show();
@@ -1008,13 +1004,13 @@ namespace BomDia
                     CheckBoxIntegrador.Checked = false;
                     // aplicar filtro para o programático
                     rowFilter = "QUANDO > '" + ListaDeDatas.Text + "'";
-                    TarefasBindingSource.Filter = rowFilter;
+                    TarefasBindingSource.Filter = "";
                     break;
                 case "Contextual":
                     //anular o filtro atual
                     CheckBoxIntegrador.Checked = false;
                     rowFilter = "DIAMARCADO is not null and QUANDO = '" + ListaDeDatas.Text + "'";
-                    TarefasBindingSource.Filter = rowFilter;
+                    TarefasBindingSource.Filter = "";
                     break;
 
                     
