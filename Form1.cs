@@ -75,15 +75,13 @@ namespace BomDia
             TarefasDataSet.ReadXml(BancoDados, XmlReadMode.ReadSchema);
             //
 
-            // Como esteja a janela do aplicativo 
+            // Capturar como esteja a janela do aplicativo 
             DataHoje.Visible = true;   DataHoje.Text = DateTime.Today.ToShortDateString();
-
             Xloc = Location.X; Yloc = Location.Y;  LarguraForm = Width; AlturaForm = Height;
 
 
             // Controles invisíveis
             DetalheUsuário.Hide(); PastaOculto.Hide(); label1.Text = "Desabilitado"; Old_label = label1.Text;
-            //BindingNavegador.Hide(); 
             Responsável.Hide();
             checkBoxExibirPrévia.Hide();
 
@@ -97,14 +95,13 @@ namespace BomDia
 
             // Formatação de datas
             string SemanaComMaiúscula; SemanaComMaiúscula = DateTime.Today.ToString("dddd");
-
             SemanaToolStripButton.Text = string.Concat("", SemanaComMaiúscula);
 
             // Carregar tabela de configuração para dentro da grade
             this.dataGridView3.DataSource = VariáveisGlobais.dataSetBiblioteca;
             this.dataGridView3.DataMember = VariáveisGlobais.dataSetBiblioteca.Tables[0].ToString();
 
-            // Carregar dados para a prévia
+            // Carregar dados para a apresentação da segmentação prévia
             FiltraDadosPrévia();
             checkBoxExibirPrévia.Text = "Prévia ligado";
             checkBoxExibirPrévia.Refresh();
@@ -129,6 +126,16 @@ namespace BomDia
             else
             {
                 toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Arquivo geral.");
+            }
+
+            //dataGridViewPrévia.DefaultCellStyle = new DataGridViewCellStyle();
+            using (Font font = new Font ("Palatino Linotype", 10))
+            {
+                dataGridViewPrévia.Columns[2].DefaultCellStyle.Font = font;
+            }
+            using (Font font = new Font("MV Boli", 10))
+            {
+                dataGridViewPrévia.Columns[3].DefaultCellStyle.Font = font;
             }
 
         }
@@ -1113,8 +1120,11 @@ namespace BomDia
                     ContadorDeClique = 0;
                 }
 
-                // Força o contexto para a data do dia
+                // Restabelece a apresentação atual
                 ListaDeDatas.Text = DateTime.Today.ToShortDateString();
+
+                checkBoxExibirPrévia.Refresh();
+                dataGridViewPrévia.FirstDisplayedScrollingRowIndex = 0;
             }
 
             catch (Exception ex)
@@ -1279,6 +1289,7 @@ namespace BomDia
         private void button1_Click(object sender, EventArgs e)
         {
             atualizarToolStripMenuItem.PerformClick();
+            MSGtoolStripStatusLabel.Text = "Tempo real atualizado";
         }
     }
 }
