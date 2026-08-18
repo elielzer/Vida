@@ -64,7 +64,7 @@ namespace BomDia
             // Associação de dados manuais
             textBox2.TextBox.DataBindings.Add("Text", TarefasBindingSource, "IND", false, DataSourceUpdateMode.OnPropertyChanged);
 
-            tableLayoutPanel5.Hide();
+            BindingExclui.Hide();
         }
         public void BomDia_Load(object sender, EventArgs e)
         {
@@ -460,8 +460,8 @@ namespace BomDia
         private void DataGridView1_Enter(object sender, EventArgs e)
         {
             MSGtoolStripStatusLabel.Text = "Bom dia. Arquivo de dados: " + TarefasDataSet.Namespace;
-            NRow = DataGridView1.RowCount - 1;
-            this.Text = Application.ProductName + " " + NRow.ToString() + "Tasks";
+            NRow = DataGridView1.Rows.Count - 1;
+            this.Text = "Mostrando agora " + NRow.ToString() + "Tarefa(s)";
         }
 
         private void hojeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -685,6 +685,7 @@ namespace BomDia
 
         private void ButtonMoveLista_Click(object sender, EventArgs e)
         {
+            if (CheckBoxIntegrador.Checked == false) { return; }
             int NCaseTrue = 0;
             try
             {
@@ -928,8 +929,7 @@ namespace BomDia
 
         private void voltarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            // Ocultar o pad
-            HideForm();
+;
         }
 
         private void TarefasBindingSource_ListChanged(object sender, ListChangedEventArgs e)
@@ -1122,6 +1122,7 @@ namespace BomDia
 
                 checkBoxExibirPrévia.Refresh();
                 dataGridViewPrévia.FirstDisplayedScrollingRowIndex = 0;
+                label9.Text = "";
             }
 
             catch (Exception ex)
@@ -1197,12 +1198,12 @@ namespace BomDia
         {
             if (ferramentasToolStripMenuItem.Checked == false) 
             { 
-                tableLayoutPanel5.Visible = false;
+                BindingExclui.Hide();
                 ferramentasToolStripMenuItem.CheckState = CheckState.Checked;
             }
             else 
             {
-                tableLayoutPanel5.Visible = true;
+                BindingExclui.Show();
                 ferramentasToolStripMenuItem.CheckState = CheckState.Unchecked;
             }
         }
@@ -1248,7 +1249,7 @@ namespace BomDia
                 string MsgTexto =
                     DataGridView1.Rows[i].Cells[0].Value.ToString();
 
-                label1.Text =  "(" + ContadorDeClique + ")";
+                label9.Text =  "(" + ContadorDeClique + ")";
                 MsgTexto = "Migrado IND(" + MsgTexto + ") para o tempo real.";
                 MSGtoolStripStatusLabel.Text = "Ok. " + MsgTexto;
                 // Desmarcar linha
@@ -1261,7 +1262,7 @@ namespace BomDia
 
         private void abrirOPadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirPad();
+
         }
 
         private void DiaMarcadoPretendido_KeyPress_1(object sender, KeyPressEventArgs e)
