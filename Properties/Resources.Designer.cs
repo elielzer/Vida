@@ -93,6 +93,16 @@ namespace Vida.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ARW02RT1 {
+            get {
+                object obj = ResourceManager.GetObject("ARW02RT1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ARW06LT {
             get {
                 object obj = ResourceManager.GetObject("ARW06LT", resourceCulture);

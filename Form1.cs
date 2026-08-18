@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
@@ -81,11 +82,10 @@ namespace BomDia
 
 
             // Controles invisíveis
-            DetalheUsuário.Hide(); PastaOculto.Hide(); label1.Text = "Desabilitado"; Old_label = label1.Text;
+            DetalheUsuário.Hide(); PastaOculto.Hide(); MSGtoolStripStatusLabel.Text = "Desabilitado"; Old_label = label1.Text;
             Responsável.Hide();
             checkBoxExibirPrévia.Hide();
 
-            timer2.Enabled = true; timer2.Stop(); timer2.Start();
 
             // Força o contexto para a data do dia
             ListaDeDatas.Text = DateTime.Today.ToShortDateString();
@@ -108,7 +108,8 @@ namespace BomDia
             dataGridViewPrévia.FirstDisplayedScrollingRowIndex = 0;
 
             // Mostrar dados marcados
-            FiltraDadosMarcados();
+            //startAsyncButton_Click();
+
 
             // Preencho o nome do usuário na barra de status
             toolStripStatusLabelUsuário.Text = "Usuário atual: ".ToUpper() + Usuário.ToUpper();
@@ -128,7 +129,7 @@ namespace BomDia
                 toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Arquivo geral.");
             }
 
-            //dataGridViewPrévia.DefaultCellStyle = new DataGridViewCellStyle();
+
             using (Font font = new Font ("Palatino Linotype", 10))
             {
                 dataGridViewPrévia.Columns[2].DefaultCellStyle.Font = font;
@@ -138,6 +139,7 @@ namespace BomDia
                 dataGridViewPrévia.Columns[3].DefaultCellStyle.Font = font;
             }
 
+            
         }
 
         public void FiltraDadosPrévia()
@@ -312,8 +314,8 @@ namespace BomDia
             MSGtoolStripStatusLabel.Text = "Esboço...";
             this.PictureBoxEditar.Image =
                 global::Vida.Properties.Resources.NEW;
-            label1.Text = "Novo item..."; label5.Text = "";
-            Old_label = label1.Text;
+            MSGtoolStripStatusLabel.Text = "Novo item..."; label5.Text = "";
+            Old_label = MSGtoolStripStatusLabel.Text;
             bindingNavigatorAddNewItem.Enabled = false;
         }
 
@@ -391,9 +393,10 @@ namespace BomDia
 
             dateTimePicker1.ResetText();
 
-            string SemanaComMaiuscula = DateTime.Today.ToString("dddd");
+            string SemanaComMaiúscula = DateTime.Today.ToString("dddd");
             
-            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiuscula);
+            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiúscula);
+            DataHoje.Text = DateTime.Today.ToShortDateString(); DataHoje.Refresh();
         }
 
         // Tornar os dados de um registro anterior como o registro para nova data
@@ -580,13 +583,7 @@ namespace BomDia
         private void Timer2_Tick(object sender, EventArgs e)
         {
 
-            //Height = AlturaReduzida;
-            //DataHoje.Visible = false;
-            DataHoje.Hide();
-            timer2.Stop();
-
-            // definir a propriedade de um menu suspenso.
-            dateTimePicker1.ContextMenuStrip = ChaveadorContextMenuStrip;
+            TempoReal();
         }
 
         private void TarefasBindingSource_AddingNew(object sender, System.ComponentModel.AddingNewEventArgs e)
@@ -594,14 +591,14 @@ namespace BomDia
             if (PréPorque != "" & PréQuando != "")
             {
                 TarefasBindingSource.CancelEdit();
-                var dialogResult =
+                //var dialogResult =
                     MessageBox.Show("Contexto incompleto", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
                 ; return;
             }
 
-            label1.Text = "Escrever item";
-            Old_label = label1.Text;
+            MSGtoolStripStatusLabel.Text = "Escrever item";
+            Old_label = MSGtoolStripStatusLabel.Text;
             this.PictureBoxEditar.Image = global::Vida.Properties.Resources.NEW;
 
         }
@@ -947,7 +944,7 @@ namespace BomDia
             if (label1.Text != "Organizando")
             {
                 label1.Text = "Organizando";
-                Old_label = label1.Text;
+                Old_label = MSGtoolStripStatusLabel.Text;
             }
         }
 
@@ -1001,7 +998,7 @@ namespace BomDia
         {
             // Aplicar um filtro de data
             //
-            string rowFilter = "";
+            string rowFilter ;
 
             switch (this.comboBoxCritério.Text)
             {
@@ -1064,7 +1061,7 @@ namespace BomDia
 
             
             
-            label1.Text = "".ToUpper();   Old_label = label1.Text;
+            MSGtoolStripStatusLabel.Text = "".ToUpper();   Old_label = label1.Text;
             toolStripButton16.Visible = false;
 
             // libera a função de inserir
@@ -1113,7 +1110,7 @@ namespace BomDia
                     DateTime.Now.ToString();
 
                 this.PictureBoxEditar.Image = global::Vida.Properties.Resources.Edit1;
-                label1.Text = "".ToUpper(); Old_label = label1.Text;
+                Old_label = MSGtoolStripStatusLabel.Text;
 
                 if (ContadorDeClique > 0)
                 {
@@ -1251,7 +1248,7 @@ namespace BomDia
                 string MsgTexto =
                     DataGridView1.Rows[i].Cells[0].Value.ToString();
 
-                label1.Text = Old_label + "(" + ContadorDeClique + ")";
+                label1.Text =  "(" + ContadorDeClique + ")";
                 MsgTexto = "Migrado IND(" + MsgTexto + ") para o tempo real.";
                 MSGtoolStripStatusLabel.Text = "Ok. " + MsgTexto;
                 // Desmarcar linha
@@ -1288,8 +1285,145 @@ namespace BomDia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            atualizarToolStripMenuItem.PerformClick();
-            MSGtoolStripStatusLabel.Text = "Tempo real atualizado";
+            // Atualização de tempo real
+            //atualizarToolStripMenuItem.PerformClick();
+            //MSGtoolStripStatusLabel.Text = "Tempo real atualizado";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DateTime datetime = Convert.ToDateTime(VariaveisGlobais.ListaDeDatasText);
+            datetime = datetime.AddDays(-1);
+            VariaveisGlobais.ListaDeDatasText = datetime.ToShortDateString();
+            ListaDeDatas.Text = VariaveisGlobais.ListaDeDatasText;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DateTime datetime =
+    Convert.ToDateTime(VariaveisGlobais.ListaDeDatasText);
+            datetime = datetime.AddDays(+1);
+            VariaveisGlobais.ListaDeDatasText = datetime.ToShortDateString();
+            ListaDeDatas.Text = VariaveisGlobais.ListaDeDatasText;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (backgroundWorker1.WorkerSupportsCancellation == true)
+            {
+                // Cancel the asynchronous operation.
+
+                backgroundWorker1.CancelAsync();
+                timer2.Stop();
+                DateTime localDate = DateTime.Now;
+                label1.Text = "Parado!" + " Horário: " + localDate.ToString();
+
+
+            }
+            
+        }
+        private void TempoReal()
+        {
+            // Carregar dados para segmentação de tempo real
+            try
+            {
+                string rowFilter = "QUANDO = '" + DateTime.Today + "' AND DIAMARCADO = QUANDO";
+
+                bindingSourceMarcados.Filter = rowFilter;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+
+            int Existentes = bindingSourceMarcados.Count;
+
+            if (Existentes == 0) { label1.Text = "Sem dados a apresentar."; return; }
+            int Contador = 0;
+
+            DataTable MinhaTabela = BomDiaTarefas;
+
+            dataGridViewMarcados.Rows.Clear();
+            foreach (DataRow rows in MinhaTabela.Rows)
+            {
+                if (DBNull.Value.Equals(rows["DIAMARCADO"])) { continue; }
+                if (DBNull.Value.Equals(rows["QUANDO"])) { continue; }
+
+                if (rows.Field<DateTime>(QUANDO) == DateTime.Today 
+                    & rows.Field<DateTime>(QUANDO) == rows.Field<DateTime>(DIAMARCADO)) 
+                {
+                    dataGridViewMarcados.Rows.Add();
+                    dataGridViewMarcados.Rows[Contador].Cells[0].Value =
+                            rows.Field<Int32>(IND);
+                    dataGridViewMarcados.Rows[Contador].Cells[1].Value =
+        rows.Field<string>(OQUE);
+                    dataGridViewMarcados.Rows[Contador].Cells[2].Value =
+        rows.Field<DateTime>(QUANDO);
+                    Contador++;
+                    
+                }
+            }
+
+        }
+        private void startAsyncButton_Click(object sender, EventArgs e)
+        {
+            if (backgroundWorker1.IsBusy != true)
+            {
+                // Start the asynchronous operation.
+                
+                backgroundWorker1.RunWorkerAsync();
+                timer2.Enabled = true;
+                timer2.Start();
+
+
+            }
+        }
+        int Escala = 24 * 60 * 60*1000;
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //
+            BackgroundWorker worker = sender as BackgroundWorker;
+            
+
+            for (int i = 1; i <= Escala; i++)
+            {
+                if (worker.CancellationPending == true)
+                {
+                    e.Cancel = true;
+                    break;
+                }
+                else
+                {
+                    // Perform a time consuming operation and report progress.
+                    System.Threading.Thread.Sleep(1000);
+                    worker.ReportProgress(i * 10);
+                    
+                    
+
+                }
+            }
+
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (e.Cancelled == true)
+            {
+                timer2.Stop();
+
+            }
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            //toolStripProgressBar1.Value = e.ProgressPercentage;
+            if (backgroundWorker1.CancellationPending == true){ return; }
+            //label1.ResetText();
+            //label1.Text = e.ProgressPercentage.ToString() + " de " + Escala + " milissegundos ";
+            DateTime localDate = DateTime.Now;
+            label1.Text = "Tempo restante: " + localDate.ToString();
+
         }
     }
 }

@@ -88,7 +88,7 @@ namespace BomDia
         public static DataRow row;
         public static string MyPath;
         public static string MyPathForLink;
-        //public static DataView DVP;
+
         public static string CaminhoBancoDeDados;
         public static string CaminhoDasPastas;
         public static string CaminhoDados;

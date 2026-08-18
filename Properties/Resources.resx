@@ -127,11 +127,11 @@
   <data name="NOTE15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NOTE15.ICO;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="INTL_NO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\INTL_NO.BMP;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AzureIoTHubEdit_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AzureIoTHubEdit_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,20 +163,20 @@
   <data name="FilterRegions_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FilterRegions_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de tela 2024-03-02 174446" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2024-03-02 174446.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EXCLEM2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EXCLEM2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NEW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NEW.BMP;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit_Parameter_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ARW02RT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ARW02RT.ICO;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tela" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EXCLEM2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EXCLEM2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,16 +190,19 @@
   <data name="CLIP07" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CLIP07.ICO;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Captura de tela 2024-03-02 174446" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2024-03-02 174446.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ARW06LT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ARW06LT.ICO;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="filterTokenCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filterTokenCancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Edit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Edit_Parameter_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ARW02RT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ARW02RT1.ICO;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
