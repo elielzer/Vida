@@ -56,7 +56,7 @@ namespace BomDia
 
             // Restrição no comportamento de alguns controles
             OQuePretendido.Enabled = false; QuandoPrevisto.Enabled = false; ComboBoxPorque.Enabled = false; flowLayoutPanel4.Enabled = false; ButtonAnexa.Enabled = false; bindingNavigatorDeleteItem.Enabled = false;
-            PictureBoxEditar.Enabled = false;
+            PictureBoxEditar.Enabled = false; DiaMarcadoPretendido.Enabled=false;
             DataGridView1.ColumnHeadersDefaultCellStyle.Font = Control.DefaultFont;
             DataGridView1.DefaultCellStyle.Font = Control.DefaultFont;
             dataGridViewPrévia.DefaultCellStyle.Font = Control.DefaultFont;
@@ -139,7 +139,7 @@ namespace BomDia
                 dataGridViewPrévia.Columns[3].DefaultCellStyle.Font = font;
             }
 
-            
+            this.toolStripSplitButtonCadeado.Text = Char.ConvertFromUtf32(128274);
         }
 
         public void FiltraDadosPrévia()
@@ -939,11 +939,11 @@ namespace BomDia
 
         public void DefinirStatus()
         {
-            if(toolStripButton16.Visible == true) { return; }
+            if(this.toolStripSplitButtonCadeado.Visible == true) { return; }
             PictureBoxEditar.Image = global::Vida.Properties.Resources.NOTE14;
-            if (label1.Text != "Organizando")
+            if (label1.Text != "Online")
             {
-                label1.Text = "Organizando";
+                label1.Text = "Online";
                 Old_label = MSGtoolStripStatusLabel.Text;
             }
         }
@@ -1008,19 +1008,19 @@ namespace BomDia
                     CheckBoxIntegrador.Checked = false;
                     // aplicar filtro para o programático
                     rowFilter = "QUANDO > '" + ListaDeDatas.Text + "'";
-                    TarefasBindingSource.Filter = "";
+                    TarefasBindingSource.Filter = rowFilter;
                     break;
                 case "Contextual":
                     //anular o filtro atual
                     CheckBoxIntegrador.Checked = false;
                     rowFilter = "DIAMARCADO is not null and QUANDO = '" + ListaDeDatas.Text + "'";
-                    TarefasBindingSource.Filter = "";
+                    TarefasBindingSource.Filter = rowFilter;
                     break;
 
                     
             }
             
-            MSGtoolStripStatusLabel.Text = "Aplicado um filtro de data";
+            MSGtoolStripStatusLabel.Text = "Aplicado um filtro de data " + comboBoxCritério.Text;
         }
 
         private void toolStripButton11_Click(object sender, EventArgs e)
@@ -1048,37 +1048,6 @@ namespace BomDia
                     toolStripStatusLabel1.Tag = "Apagado";
                     break;
             }
-        }
-
-        private void toolStripButton16_Click(object sender, EventArgs e)
-        {
-            // Desbloquear elementos
-            OQuePretendido.Enabled = true; QuandoPrevisto.Enabled = true;
-            ComboBoxPorque.Enabled = true; flowLayoutPanel4.Enabled = true;
-            ButtonAnexa.Enabled = true; bindingNavigatorDeleteItem.Enabled = true;
-            ButtonAnexa.Enabled = true; BindingExclui.Enabled = true;
-            PictureBoxEditar.Enabled = true;
-
-            
-            
-            MSGtoolStripStatusLabel.Text = "".ToUpper();   Old_label = label1.Text;
-            toolStripButton16.Visible = false;
-
-            // libera a função de inserir
-            dataHoje = DateTime.Today;
-            dataPara = Convert.ToDateTime(ListaDeDatas.SelectedItem);
-            if (dataPara == dataHoje)
-            {
-                MSGtoolStripStatusLabel.Text =
-                    "Arquivo de dados: " + BancoDados;
-
-                if (bindingNavigatorAddNewItem.Enabled == false)
-                { bindingNavigatorAddNewItem.Enabled = true; }
-                if (bindingNavigatorDeleteItem.Enabled == false) { bindingNavigatorDeleteItem.Enabled = true; }
-                if (bindingNavigatorAddNewItem.Text != "&Inserir")
-                { bindingNavigatorAddNewItem.Text = "&Inserir"; }
-            }
-
         }
 
         private void ButtonAnexa_Click(object sender, EventArgs e)
@@ -1424,6 +1393,38 @@ namespace BomDia
             //label1.Text = e.ProgressPercentage.ToString() + " de " + Escala + " milissegundos ";
             DateTime localDate = DateTime.Now;
             label1.Text = "Tempo restante: " + localDate.ToString();
+
+        }
+
+        private void toolStripSplitButton1_Click(object sender, EventArgs e)
+        {
+            // Habilitar elementos
+            OQuePretendido.Enabled = true; QuandoPrevisto.Enabled = true;
+            ComboBoxPorque.Enabled = true; flowLayoutPanel4.Enabled = true;
+            ButtonAnexa.Enabled = true; bindingNavigatorDeleteItem.Enabled = true;
+            ButtonAnexa.Enabled = true; BindingExclui.Enabled = true;
+            PictureBoxEditar.Enabled = true;
+            DiaMarcadoPretendido.Enabled = true;
+
+
+            MSGtoolStripStatusLabel.Text = "".ToUpper(); Old_label = label1.Text;
+            // Ocultar
+            this.toolStripSplitButtonCadeado.Visible = false;
+
+            // libera a função de inserir
+            dataHoje = DateTime.Today;
+            dataPara = Convert.ToDateTime(ListaDeDatas.SelectedItem);
+            if (dataPara == dataHoje)
+            {
+                MSGtoolStripStatusLabel.Text =
+                    "Arquivo de dados: " + BancoDados;
+
+                if (bindingNavigatorAddNewItem.Enabled == false)
+                { bindingNavigatorAddNewItem.Enabled = true; }
+                if (bindingNavigatorDeleteItem.Enabled == false) { bindingNavigatorDeleteItem.Enabled = true; }
+                if (bindingNavigatorAddNewItem.Text != "&Inserir")
+                { bindingNavigatorAddNewItem.Text = "&Inserir"; }
+            }
 
         }
     }
