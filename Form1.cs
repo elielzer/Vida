@@ -95,7 +95,12 @@ namespace BomDia
 
             // Formatação de datas
             string SemanaComMaiúscula; SemanaComMaiúscula = DateTime.Today.ToString("dddd");
-            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiúscula);
+            VariáveisGlobais.EstratificaSemana();          
+            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiúscula ," ", "(" + VariáveisGlobais.PercentualSemana  + "%)");
+            textBoxDia.Text = string.Concat("Dia ", DateTime.Today.Day, " ", "(" + VariáveisGlobais.PercentualDia + "%)");
+            textBoxMês.Text = string.Concat("", DateTime.Today.ToString("MMMM"), " ", "(" + VariáveisGlobais.PercentualMês + "%)");
+            textBoxAno.Text = string.Concat("", DateTime.Today.Year, " ", "(" + VariáveisGlobais.PercentualAno + "%)");
+
 
             // Carregar tabela de configuração para dentro da grade
             this.dataGridView3.DataSource = VariáveisGlobais.dataSetBiblioteca;
@@ -139,7 +144,7 @@ namespace BomDia
                 dataGridViewPrévia.Columns[3].DefaultCellStyle.Font = font;
             }
 
-            this.toolStripSplitButtonCadeado.Text = Char.ConvertFromUtf32(128274);
+            this.toolStripSplitButtonCadeado.Text = Char.ConvertFromUtf32(128274) + " &Lacre";
         }
 
         public void FiltraDadosPrévia()
@@ -374,8 +379,8 @@ namespace BomDia
                     "Arquivo de dados: " + BancoDados;
 
                 DiaBomDiaLabel.Text = "Em Pauta 📌".ToUpper();
-                label4.Text = "Tempo Real ⌚";
-                //global::BomDia.Properties.Resources.Edit1;
+                label4.Text = "⌚";
+
                 
                 //this.DiaBomDiaLabel.Image = global::Vida.Properties.Resources.mark;
                 
@@ -394,8 +399,12 @@ namespace BomDia
             dateTimePicker1.ResetText();
 
             string SemanaComMaiúscula = DateTime.Today.ToString("dddd");
-            
-            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiúscula);
+            VariáveisGlobais.EstratificaSemana();
+            SemanaToolStripButton.Text = string.Concat("", SemanaComMaiúscula, " ", "(" + VariáveisGlobais.PercentualSemana + "%)");
+            textBoxDia.Text = string.Concat("Dia ", DateTime.Today.Day, " ", "(" + VariáveisGlobais.PercentualDia + "%)");
+            textBoxMês.Text = string.Concat("", DateTime.Today.ToString("MMMM"), " ", "(" + VariáveisGlobais.PercentualMês + "%)");
+            textBoxAno.Text = string.Concat("", DateTime.Today.Year, " ", "(" + VariáveisGlobais.PercentualAno + "%)");
+
             DataHoje.Text = DateTime.Today.ToShortDateString(); DataHoje.Refresh();
         }
 
@@ -1427,5 +1436,8 @@ namespace BomDia
             }
 
         }
+        
     }
+    
+
 }

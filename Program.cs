@@ -94,6 +94,12 @@ namespace BomDia
         public static string CaminhoDados;
         public static string CaminhoDosImpressos;
 
+        public static string PercentualSemana ;
+        public static string PercentualDia;
+        public static string PercentualMês;
+        public static string PercentualAno;
+
+
         public static DirectoryInfo nodeDirInfo; public static TreeNode newSelected;
         public static DirectoryInfo info;
 
@@ -144,7 +150,25 @@ namespace BomDia
             VariáveisGlobais.CriaTabela();
             // Diretrizes de dados incluídos na publicação
             dataSetBiblioteca.ReadXml("bomDiaConfig.xml", XmlReadMode.ReadSchema);
+        }
 
+        public static void EstratificaSemana()
+        {
+            Single semana = (int)DateTime.Today.DayOfWeek;
+            semana = 100 * (semana / 7);
+            VariáveisGlobais.PercentualSemana = semana.ToString("0.0");
+
+            Single Dia = (int)DateTime.Today.Day;
+            Dia = 100 * (Dia / DateTime.DaysInMonth(DateTime.Today.Year,DateTime.Today.Month));
+            VariáveisGlobais.PercentualDia = Dia.ToString("0.0");
+
+            Single Mês = (int)DateTime.Today.Month;
+            Mês = 100 * (Mês / 12);
+            VariáveisGlobais.PercentualMês = Mês.ToString("0.0");
+
+            Single Ano = (int)DateTime.Today.Year-2000;
+            Mês = 100 * (Ano /100 );
+            VariáveisGlobais.PercentualAno = Mês.ToString("0.0");
 
         }
 
