@@ -1436,7 +1436,32 @@ namespace BomDia
             }
 
         }
-        
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBoxAgendaData.Text = Convert.ToDateTime(textBoxAgendaTexto.Text).ToShortDateString();
+            DateTime Agenda = Convert.ToDateTime(textBoxAgendaTexto.Text);
+            TimeSpan Intervalo = new TimeSpan(Convert.ToInt32( textBoxSpanAno.Text),
+                Convert.ToInt32(textBoxSpanHoras.Text),Convert.ToInt32(textBoxSpanMinutos.Text), 
+                Convert.ToInt32(textBoxSegundos.Text));
+            Agenda = Agenda + Intervalo;
+
+            textBoxAgendaData.Text = Agenda.ToString();
+            Resultado.Text = Resultado.Text + "(+)";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBoxAgendaData.Text = Convert.ToDateTime(textBoxAgendaTexto.Text).ToShortDateString();
+            DateTime Agenda = Convert.ToDateTime(textBoxAgendaTexto.Text);
+            TimeSpan Intervalo = new TimeSpan(Convert.ToInt32(textBoxSpanAno.Text),
+                Convert.ToInt32(textBoxSpanHoras.Text), Convert.ToInt32(textBoxSpanMinutos.Text),
+                Convert.ToInt32(textBoxSegundos.Text));
+            Agenda = Agenda - Intervalo;
+
+            textBoxAgendaData.Text = Agenda.ToString();
+            Resultado.Text = Resultado.Text + "(-)";
+        }
     }
     
 
