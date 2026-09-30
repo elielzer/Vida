@@ -60,6 +60,7 @@ namespace BomDia
             DataGridView1.ColumnHeadersDefaultCellStyle.Font = Control.DefaultFont;
             DataGridView1.DefaultCellStyle.Font = Control.DefaultFont;
             dataGridViewPrévia.DefaultCellStyle.Font = Control.DefaultFont;
+            
 
             // Associação de dados manuais
             textBox2.TextBox.DataBindings.Add("Text", TarefasBindingSource, "IND", false, DataSourceUpdateMode.OnPropertyChanged);
@@ -73,6 +74,7 @@ namespace BomDia
 
             tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
             tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
+            toolStripLabel3.BackColor = Control.DefaultBackColor;
             TarefasDataSet.ReadXml(BancoDados, XmlReadMode.ReadSchema);
             //
 
@@ -337,11 +339,14 @@ namespace BomDia
                 TarefasBindingSource.Filter = String.Format("QUANDO =" +
                     " '{0:dd/MM/yyyy}'", ListaDeDatas.Text);
                 toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Apenas entregas correntes.");
+                toolStripLabel3.Text = "Segmentos"; //toolStrip1.Refresh();
             }
             else
             {
                 TarefasBindingSource.Filter = "";
                 toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Arquivo geral.");
+
+                
             }
         }
 
@@ -1018,17 +1023,17 @@ namespace BomDia
                     // aplicar filtro para o programático
                     rowFilter = "QUANDO > '" + ListaDeDatas.Text + "'";
                     TarefasBindingSource.Filter = rowFilter;
+                    toolStripLabel3.Text = this.comboBoxCritério.Text;
                     break;
                 case "Contextual":
                     //anular o filtro atual
                     CheckBoxIntegrador.Checked = false;
                     rowFilter = "DIAMARCADO is not null and QUANDO = '" + ListaDeDatas.Text + "'";
                     TarefasBindingSource.Filter = rowFilter;
+                    toolStripLabel3.Text = this.comboBoxCritério.Text;
                     break;
-
                     
-            }
-            
+            }           
             MSGtoolStripStatusLabel.Text = "Aplicado um filtro de data " + comboBoxCritério.Text;
         }
 
