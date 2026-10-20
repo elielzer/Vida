@@ -29,7 +29,7 @@ namespace BomDia
         
         int LarguraForm = 0; int AlturaForm = 0;  int Xloc = 0; int Yloc = 0; int LarguraReduzida = 0;
 
-        Pad pad; // Abre o formulário suspenso especial
+        //Pad pad; // Abre o formulário suspenso especial
 
         // Obter o nome de usuário do Windows
         public string Usuário = WindowsIdentity.GetCurrent().Name.ToString();
@@ -182,7 +182,6 @@ namespace BomDia
 
         }
 
-
         private void CortinaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Surgir a janela principal no tamanho padrão
@@ -212,7 +211,6 @@ namespace BomDia
         public void BomDia_KeyPress(object sender, KeyPressEventArgs e)
         {
 
-
             if (e.KeyChar == (char)27)
             {
                 // Zerar a variável global 
@@ -226,7 +224,7 @@ namespace BomDia
 
                 }
 
-                pad?.Dispose();
+                //pad?.Dispose();
                 Program.Bomdia.TopMost = true;
 
 
@@ -469,7 +467,7 @@ namespace BomDia
 
             cortinaToolStripMenuItem.Enabled = true;
 
-            Program.Bomdia.TopMost = true; HideForm();// Ocultar 
+            Program.Bomdia.TopMost = true; //HideForm();// Ocultar 
         }
         private void DataGridView1_Enter(object sender, EventArgs e)
         {
@@ -798,21 +796,6 @@ namespace BomDia
         {
 
         }
-        private void HideForm()
-        {
-            if (pad == null)
-            {
-                return;
-            }
-            else
-            {
-
-                pad.Activate();
-                pad.Hide();
-
-            }
-        }
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             DataGridView1.DataSource = TarefasBindingSource;
@@ -823,59 +806,8 @@ namespace BomDia
             MSGtoolStripStatusLabel.Text = "Campo: Portal";
         }
 
-        private void AbrirPad()
-        {
 
-            if (Program.Bomdia.TopMost == true)
-            {
-                Program.Bomdia.TopMost = false;
-            }
-
-            if (pad == null)
-            {
-                Program.Bomdia.TopMost = false; pad = new Pad
-                {
-                    TopLevel = true
-                };
-                pad.Portal +=
-                    (s, Stexto) => ListaDeDatas.Text = Stexto; // Assina o evento
-                pad.Show();
-                return;
-            }
-            else
-            {
-                pad.Show();
-            }
-
-        }
-
-        private void DataGridView1_MouseEnter(object sender, EventArgs e)
-        {
-
-            if (pad == null)
-            {
-                pad = new Pad();
-
-                //pad.Location =
-                //    new Point(Program.DiaBomDiaX, Program.DiaBomDiaY);
-                pad.Show();
-
-            }
-            else if (pad.IsDisposed)
-            {
-                pad = new Pad();
-                //pad.Location =
-                //    new Point(Program.DiaBomDiaX, Program.DiaBomDiaY);
-                pad.Show();
-            }
-
-            Program.Bomdia.TopMost = false;
-
-            pad.TopMost = true;
-            pad.TopLevel = true;
-            Program.Bomdia.Activate();
-
-        }
+        
 
         private void BomDia_Activated(object sender, EventArgs e)
         {
