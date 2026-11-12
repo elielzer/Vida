@@ -379,7 +379,7 @@ namespace BomDia
             if (dataPara == dataHoje)
             {
                 MSGtoolStripStatusLabel.Text =
-                    "Arquivo de dados: " + BancoDados;
+                    "Arq." + BancoDados;
 
                 DiaBomDiaLabel.Text = "Em Pauta 📌".ToUpper();
                 label4.Text = "⌚";
