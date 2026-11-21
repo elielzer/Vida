@@ -300,14 +300,11 @@ namespace BomDia
 
             if (dataPara > dataHoje)
             {
-                //dataPara = dataHoje;
                 PréQuando = dTime.ToShortDateString();
-                //PréQuando = DateTime.Today.ToShortDateString();
             }
             else
             {
                 PréQuando = DateTime.Today.ToShortDateString();
-
             }
 
             QuandoPrevisto.Text = PréQuando;
@@ -321,13 +318,9 @@ namespace BomDia
                 global::Vida.Properties.Resources.NEW;
             MSGtoolStripStatusLabel.Text = "Novo item..."; label5.Text = "";
             Old_label = MSGtoolStripStatusLabel.Text;
-            bindingNavigatorAddNewItem.Enabled = false;
+            bindingNavigatorAddNewItem.Enabled = false; button8.Enabled = false;
         }
 
-        private void abrirToolStripButton_Click(object sender, EventArgs e)
-        {
-            //tableLayoutPanel6.Enabled = true;
-        }
 
 
         private void CheckBoxIntegrador_Click(object sender, EventArgs e)
@@ -367,14 +360,14 @@ namespace BomDia
                 { bindingNavigatorAddNewItem.Text = "&Criar"; }
 
                 if (bindingNavigatorAddNewItem.Enabled == false)
-                { bindingNavigatorAddNewItem.Enabled = true; }
+                { bindingNavigatorAddNewItem.Enabled = true; button8.Enabled = true; }
             }
             if (dataPara < dataHoje)
             {
                 DiaBomDiaLabel.Text = "Em log".ToUpper();
                 this.DiaBomDiaLabel.Image = null;
                 if (bindingNavigatorAddNewItem.Enabled != false)
-                { bindingNavigatorAddNewItem.Enabled = false; }
+                { bindingNavigatorAddNewItem.Enabled = false; button8.Enabled = false; }
             }
             if (dataPara == dataHoje)
             {
@@ -388,7 +381,7 @@ namespace BomDia
                 //this.DiaBomDiaLabel.Image = global::Vida.Properties.Resources.mark;
                 
                 if (bindingNavigatorAddNewItem.Enabled == false)
-                { bindingNavigatorAddNewItem.Enabled = true; }
+                { bindingNavigatorAddNewItem.Enabled = true; button8.Enabled = true; }
                 if (bindingNavigatorAddNewItem.Text != "&Inserir")
                 { bindingNavigatorAddNewItem.Text = "&Inserir"; }
             }
@@ -757,34 +750,29 @@ namespace BomDia
             ;
         }
 
-
-
         private void ShowLineJoin_tableLayoutPanel9(PaintEventArgs e)
         {
-            // Traçar um linha horizontal
+            /* Traçar um linha horizontal */
             // Create pen.
-            Pen bluePen = new Pen(Color.Gray, 1)
+            Pen bluePen = new Pen(Color.Blue, 3)
             {
                 DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
             };
             // Create points that define line.
-            PointF point1 =
-                new PointF(splitContainer5.Left+42,
-                splitContainer5.Top + splitContainer5.Height -1
-               );
-            
+            PointF point1 =  new PointF(splitContainer5.Panel1.Width +
+                splitContainer5.Panel2.Width -
+                tableLayoutPanel7.Width-3  /* coordenada X */,
+                splitContainer5.Height /* coordenada Y */);  
+
             PointF point2 =
-            new PointF(point1.X + tableLayoutPanel9.Width-100, point1.Y);
+            new PointF(tableLayoutPanel7.Width + point1.X,point1.Y);
 
             // Draw line to screen.
             e.Graphics.DrawLine(bluePen, point1, point2);
+            /* conclusão linha horizontal*/
 
-            // Traçar uma linha vertical.
-            point2 = new PointF(point1.X, point1.Y);
-            point1 =  new PointF(point1.X, splitContainer5.Top);
-            // Draw line.
-            e.Graphics.DrawLine(bluePen, point1, point2);
 
+            
         }
 
         private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
@@ -792,14 +780,8 @@ namespace BomDia
             ShowLineJoin_tableLayoutPanel9(e);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
 
-        }
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            DataGridView1.DataSource = TarefasBindingSource;
-        }
+
 
         private void ListaDeDatas_Enter(object sender, EventArgs e)
         {
@@ -833,7 +815,7 @@ namespace BomDia
             if ((QuandoPrevisto.Text == "") || (OQuePretendido.Text == ""))
             {
                 TarefasBindingSource.CancelEdit();
-                bindingNavigatorAddNewItem.Enabled = true;
+                bindingNavigatorAddNewItem.Enabled = true; button8.Enabled = true;
                 return;
             }
 
@@ -858,10 +840,10 @@ namespace BomDia
 
             if (bindingNavigatorAddNewItem.Enabled == false)
             {
-                bindingNavigatorAddNewItem.Enabled = true;
+                bindingNavigatorAddNewItem.Enabled = true; button8.Enabled= true;
             }
 
-
+            DataGridView1.Update(); DataGridView1.Refresh();
         }
         private void portalToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1366,7 +1348,7 @@ namespace BomDia
                     "Arquivo de dados: " + BancoDados;
 
                 if (bindingNavigatorAddNewItem.Enabled == false)
-                { bindingNavigatorAddNewItem.Enabled = true; }
+                { bindingNavigatorAddNewItem.Enabled = true; button8.Enabled = true; }
                 if (bindingNavigatorDeleteItem.Enabled == false) { bindingNavigatorDeleteItem.Enabled = true; }
                 if (bindingNavigatorAddNewItem.Text != "&Inserir")
                 { bindingNavigatorAddNewItem.Text = "&Inserir"; }
@@ -1398,6 +1380,71 @@ namespace BomDia
 
             textBoxAgendaData.Text = Agenda.ToString();
             Resultado.Text = Resultado.Text + "(-)";
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            System.DateTime dTime = DateTime.Today;
+            System.TimeSpan tSpan = new System.TimeSpan(1, 0, 0, 0);
+            dTime = dTime + tSpan;
+            PréPorque = "A";
+
+            if (dataPara > dataHoje)
+            {
+                PréQuando = dTime.ToShortDateString();
+            }
+            else
+            {
+                PréQuando = DateTime.Today.ToShortDateString();
+            }
+
+            QuandoPrevisto.Text = PréQuando;
+            ComboBoxPorque.SelectedValue = PréPorque;
+
+            DetalheUsuário.DataBindings.Control.Text = Usuário;
+
+            ActiveControl = OQuePretendido;
+            MSGtoolStripStatusLabel.Text = "Esboço...";
+            this.PictureBoxEditar.Image =
+                global::Vida.Properties.Resources.NEW;
+            MSGtoolStripStatusLabel.Text = "Novo item..."; label5.Text = "";
+            Old_label = MSGtoolStripStatusLabel.Text;
+            bindingNavigatorAddNewItem.Enabled = false; button8.Enabled = false;
+            OQuePretendido.Focus();
+        }
+
+        private void toolStripMenuItemPasta_Click(object sender, EventArgs e)
+        {
+            pastaDoItemToolStripMenuItem.PerformClick();
+        }
+
+        private void tableLayoutPanel9_Paint_1(object sender, PaintEventArgs e)
+        {
+            /* Traçar um linha horizontal */
+            // Create pen.
+            Pen bluePen = new Pen(Color.Blue, 3)
+            {
+                DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
+            };
+            // Create points that define line.
+            PointF point1 = new PointF(tableLayoutPanel9.Left + tableLayoutPanel13.Width +6
+                /* coordenada X */,
+                splitContainer5.Height /* coordenada Y */);
+
+            PointF point2 =
+            new PointF(tableLayoutPanel7.Width + point1.X, point1.Y);
+
+            /* Traçar uma linha vertical.  */
+            point2 = new PointF(point1.X, point1.Y + 10);
+            point1 = new PointF(point1.X, 0);
+            // Draw line.
+            e.Graphics.DrawLine(bluePen, point1, point2);
+
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            pastaDoItemToolStripMenuItem.PerformClick();
         }
     }
     
