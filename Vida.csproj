@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>270</ApplicationRevision>
+    <ApplicationRevision>271</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -301,6 +301,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="MISC41.ICO" />
+    <None Include="Resources\newrecord.png" />
     <None Include="Resources\ARW02RT1.ICO" />
     <None Include="Resources\mark.png" />
     <None Include="Resources\EXCLEM2.gif" />

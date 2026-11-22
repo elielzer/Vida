@@ -481,7 +481,7 @@ namespace BomDia
         {
 
 
-            this.PictureBoxEditar.Image = global::Vida.Properties.Resources.Edit1;
+            this.PictureBoxEditar.Image = global::Vida.Properties.Resources.newrecord;
             
             if (DataGridView1.CurrentRow == null) //quando a posição está em linha nova
             {
@@ -761,7 +761,7 @@ namespace BomDia
             // Create points that define line.
             PointF point1 =  new PointF(splitContainer5.Panel1.Width +
                 splitContainer5.Panel2.Width -
-                tableLayoutPanel7.Width-3  /* coordenada X */,
+                tableLayoutPanel7.Width -1 /* coordenada X */,
                 splitContainer5.Height /* coordenada Y */);  
 
             PointF point2 =
@@ -1006,7 +1006,7 @@ namespace BomDia
                 MSGtoolStripStatusLabel.Text = "Anexada a tarefa no arquivo XML " +
                     DateTime.Now.ToString();
 
-                this.PictureBoxEditar.Image = global::Vida.Properties.Resources.Edit1;
+                this.PictureBoxEditar.Image = global::Vida.Properties.Resources.newrecord;
                 Old_label = MSGtoolStripStatusLabel.Text;
 
                 if (ContadorDeClique > 0)
@@ -1420,14 +1420,14 @@ namespace BomDia
 
         private void tableLayoutPanel9_Paint_1(object sender, PaintEventArgs e)
         {
-            /* Traçar um linha horizontal */
             // Create pen.
             Pen bluePen = new Pen(Color.Blue, 3)
             {
                 DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
             };
             // Create points that define line.
-            PointF point1 = new PointF(tableLayoutPanel9.Left + tableLayoutPanel13.Width +6
+            PointF point1 = new PointF(tableLayoutPanel9.Left + 
+                tableLayoutPanel9.Width - tableLayoutPanel7.Width-2
                 /* coordenada X */,
                 splitContainer5.Height /* coordenada Y */);
 

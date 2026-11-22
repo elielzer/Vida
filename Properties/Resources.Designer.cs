@@ -293,6 +293,16 @@ namespace Vida.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap newrecord {
+            get {
+                object obj = ResourceManager.GetObject("newrecord", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NOTE14 {
             get {
                 object obj = ResourceManager.GetObject("NOTE14", resourceCulture);
