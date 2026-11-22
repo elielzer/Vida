@@ -74,7 +74,7 @@ namespace BomDia
 
             tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
             tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
-            toolStripLabel3.BackColor = Control.DefaultBackColor;
+            //toolStripLabel3.BackColor = Control.DefaultBackColor;
             TarefasDataSet.ReadXml(BancoDados, XmlReadMode.ReadSchema);
             //
 
@@ -330,7 +330,7 @@ namespace BomDia
                 TarefasBindingSource.Filter = String.Format("QUANDO =" +
                     " '{0:dd/MM/yyyy}'", ListaDeDatas.Text);
                 toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Apenas entregas correntes.");
-                toolStripLabel3.Text = "Segmentos"; //toolStrip1.Refresh();
+                //toolStripLabel3.Text = "Segmentos"; //toolStrip1.Refresh();
             }
             else
             {
@@ -937,14 +937,14 @@ namespace BomDia
                     // aplicar filtro para o programático
                     rowFilter = "QUANDO > '" + ListaDeDatas.Text + "'";
                     TarefasBindingSource.Filter = rowFilter;
-                    toolStripLabel3.Text = this.comboBoxCritério.Text;
+                    //toolStripLabel3.Text = this.comboBoxCritério.Text;
                     break;
                 case "Contextual":
                     //anular o filtro atual
                     CheckBoxIntegrador.Checked = false;
                     rowFilter = "DIAMARCADO is not null and QUANDO = '" + ListaDeDatas.Text + "'";
                     TarefasBindingSource.Filter = rowFilter;
-                    toolStripLabel3.Text = this.comboBoxCritério.Text;
+                    //toolStripLabel3.Text = this.comboBoxCritério.Text;
                     break;
                     
             }           

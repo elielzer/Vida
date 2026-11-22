@@ -31,32 +31,32 @@ namespace BomDia
         public void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle194 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle199 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle200 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle195 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle171 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle196 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle197 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle198 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BomDia));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle201 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle202 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle203 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle209 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle210 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle204 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle205 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle206 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle207 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle208 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle211 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle217 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle212 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle213 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle214 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle215 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle216 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle145 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle140 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle141 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle142 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle143 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle144 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TarefasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TarefasDataSet = new System.Data.DataSet();
             this.BomDiaTarefas = new System.Data.DataTable();
@@ -123,8 +123,13 @@ namespace BomDia
             this.Responsável = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.PictureBoxEditar = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.QuandoPrevisto = new System.Windows.Forms.MaskedTextBox();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.OQuePretendido = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -134,6 +139,13 @@ namespace BomDia
             this.label9 = new System.Windows.Forms.ToolStripLabel();
             this.ButtonAnexa = new System.Windows.Forms.ToolStripButton();
             this.ComboBoxPorque = new System.Windows.Forms.ComboBox();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabelNovo = new System.Windows.Forms.ToolStripLabel();
+            this.button8 = new System.Windows.Forms.ToolStripSplitButton();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
@@ -189,19 +201,18 @@ namespace BomDia
             this.bindingNavigator4 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
-            this.BindingExclui = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.textBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.ButtonMoveLista = new System.Windows.Forms.Button();
             this.imageListBandeja = new System.Windows.Forms.ImageList(this.components);
             this.label8 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.comboBoxCritério = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.checkBoxExibirPrévia = new System.Windows.Forms.CheckBox();
+            this.BindingExclui = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.textBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BindingNavegador = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -260,18 +271,6 @@ namespace BomDia
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.toolStripMenuItemPasta = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripLabelNovo = new System.Windows.Forms.ToolStripLabel();
-            this.button8 = new System.Windows.Forms.ToolStripSplitButton();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.OQuePretendido = new System.Windows.Forms.RichTextBox();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.QuandoPrevisto = new System.Windows.Forms.MaskedTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.TarefasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TarefasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BomDiaTarefas)).BeginInit();
@@ -298,10 +297,14 @@ namespace BomDia
             this.panel3.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEditar)).BeginInit();
+            this.flowLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).BeginInit();
             this.bindingNavigator3.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
             this.splitContainer7.Panel1.SuspendLayout();
             this.splitContainer7.Panel2.SuspendLayout();
@@ -332,9 +335,9 @@ namespace BomDia
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).BeginInit();
             this.bindingNavigator4.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BindingExclui)).BeginInit();
             this.BindingExclui.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BindingNavegador)).BeginInit();
             this.BindingNavegador.SuspendLayout();
@@ -353,10 +356,6 @@ namespace BomDia
             this.contextMenuStripFile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceMarcados)).BeginInit();
             this.contextMenuStripMarcadas.SuspendLayout();
-            this.toolStrip2.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // TarefasBindingSource
@@ -467,14 +466,14 @@ namespace BomDia
             this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle194.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle194.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle194.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle194.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle194.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle194.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle194.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle194;
+            dataGridViewCellStyle122.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle122.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle122.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle122.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle122.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle122.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle122.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle122;
             this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView1.ColumnHeadersVisible = false;
             this.DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -489,14 +488,14 @@ namespace BomDia
             this.Sinalizar,
             this.dataGridViewTextBoxColumn2});
             this.DataGridView1.DataSource = this.TarefasBindingSource;
-            dataGridViewCellStyle199.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle199.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle199.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle199.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle199.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle199.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle199.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle199;
+            dataGridViewCellStyle127.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle127.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle127.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle127.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle127.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle127.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle127.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle127;
             this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridView1.EnableHeadersVisualStyles = false;
             this.DataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -504,12 +503,12 @@ namespace BomDia
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridView1.RowHeadersWidth = 25;
-            dataGridViewCellStyle200.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle200.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle200;
+            dataGridViewCellStyle128.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle128.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle128;
             this.DataGridView1.RowTemplate.Height = 30;
             this.DataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.Size = new System.Drawing.Size(780, 206);
+            this.DataGridView1.Size = new System.Drawing.Size(720, 197);
             this.DataGridView1.TabIndex = 8;
             this.DataGridView1.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.DataGridView1_CellBeginEdit);
             this.DataGridView1.SelectionChanged += new System.EventHandler(this.DataGridView1_SelectionChanged);
@@ -520,10 +519,10 @@ namespace BomDia
             // 
             this.iNDDataGridViewTextBoxColumn.ContextMenuStrip = this.contextMenuStripItem;
             this.iNDDataGridViewTextBoxColumn.DataPropertyName = "IND";
-            dataGridViewCellStyle195.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle195.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle195.ForeColor = System.Drawing.Color.Blue;
-            this.iNDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle195;
+            dataGridViewCellStyle123.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle123.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle123.ForeColor = System.Drawing.Color.Blue;
+            this.iNDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle123;
             this.iNDDataGridViewTextBoxColumn.DividerWidth = 1;
             this.iNDDataGridViewTextBoxColumn.FillWeight = 50F;
             this.iNDDataGridViewTextBoxColumn.Frozen = true;
@@ -532,7 +531,7 @@ namespace BomDia
             this.iNDDataGridViewTextBoxColumn.Name = "iNDDataGridViewTextBoxColumn";
             this.iNDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.iNDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.iNDDataGridViewTextBoxColumn.Width = 24;
+            this.iNDDataGridViewTextBoxColumn.Width = 28;
             // 
             // contextMenuStripItem
             // 
@@ -540,12 +539,12 @@ namespace BomDia
             this.contextMenuStripItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.contextMenuStripItem.Name = "contextMenuStripItem";
-            this.contextMenuStripItem.Size = new System.Drawing.Size(164, 26);
+            this.contextMenuStripItem.Size = new System.Drawing.Size(219, 36);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(218, 32);
             this.toolStripMenuItem1.Text = "Migrar para Hoje";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -553,8 +552,8 @@ namespace BomDia
             // 
             this.oQUEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.oQUEDataGridViewTextBoxColumn.DataPropertyName = "OQUE";
-            dataGridViewCellStyle171.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.oQUEDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle171;
+            dataGridViewCellStyle99.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.oQUEDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle99;
             this.oQUEDataGridViewTextBoxColumn.Frozen = true;
             this.oQUEDataGridViewTextBoxColumn.HeaderText = "PRETENSÕES ◣";
             this.oQUEDataGridViewTextBoxColumn.MinimumWidth = 8;
@@ -564,14 +563,14 @@ namespace BomDia
             // qUANDODataGridViewTextBoxColumn
             // 
             this.qUANDODataGridViewTextBoxColumn.DataPropertyName = "QUANDO";
-            dataGridViewCellStyle196.Format = "d";
-            dataGridViewCellStyle196.NullValue = null;
-            this.qUANDODataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle196;
+            dataGridViewCellStyle124.Format = "d";
+            dataGridViewCellStyle124.NullValue = null;
+            this.qUANDODataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle124;
             this.qUANDODataGridViewTextBoxColumn.FillWeight = 80F;
             this.qUANDODataGridViewTextBoxColumn.HeaderText = "QUANDO";
             this.qUANDODataGridViewTextBoxColumn.MinimumWidth = 8;
             this.qUANDODataGridViewTextBoxColumn.Name = "qUANDODataGridViewTextBoxColumn";
-            this.qUANDODataGridViewTextBoxColumn.Width = 20;
+            this.qUANDODataGridViewTextBoxColumn.Width = 26;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -579,18 +578,18 @@ namespace BomDia
             this.dataGridViewTextBoxColumn1.HeaderText = "DATA LIMITE";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 20;
+            this.dataGridViewTextBoxColumn1.Width = 26;
             // 
             // pORQUEDataGridViewTextBoxColumn
             // 
             this.pORQUEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.pORQUEDataGridViewTextBoxColumn.DataPropertyName = "PORQUE";
             this.pORQUEDataGridViewTextBoxColumn.DataSource = this.PrioridadesBindingSource;
-            dataGridViewCellStyle197.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle197.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle197.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle197.SelectionForeColor = System.Drawing.Color.White;
-            this.pORQUEDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle197;
+            dataGridViewCellStyle125.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle125.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle125.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle125.SelectionForeColor = System.Drawing.Color.White;
+            this.pORQUEDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle125;
             this.pORQUEDataGridViewTextBoxColumn.DisplayMember = "Denomination";
             this.pORQUEDataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.pORQUEDataGridViewTextBoxColumn.HeaderText = "POR QUÊ";
@@ -607,16 +606,16 @@ namespace BomDia
             this.pESODataGridViewTextBoxColumn.HeaderText = "PESO";
             this.pESODataGridViewTextBoxColumn.MinimumWidth = 8;
             this.pESODataGridViewTextBoxColumn.Name = "pESODataGridViewTextBoxColumn";
-            this.pESODataGridViewTextBoxColumn.Width = 20;
+            this.pESODataGridViewTextBoxColumn.Width = 26;
             // 
             // cRITÉRIODataGridViewTextBoxColumn
             // 
             this.cRITÉRIODataGridViewTextBoxColumn.DataPropertyName = "CRITÉRIO";
-            dataGridViewCellStyle198.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle198.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle198.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle198.SelectionForeColor = System.Drawing.Color.White;
-            this.cRITÉRIODataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle198;
+            dataGridViewCellStyle126.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle126.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle126.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle126.SelectionForeColor = System.Drawing.Color.White;
+            this.cRITÉRIODataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle126;
             this.cRITÉRIODataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
             this.cRITÉRIODataGridViewTextBoxColumn.DividerWidth = 1;
             this.cRITÉRIODataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -628,7 +627,7 @@ namespace BomDia
             this.cRITÉRIODataGridViewTextBoxColumn.Name = "cRITÉRIODataGridViewTextBoxColumn";
             this.cRITÉRIODataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.cRITÉRIODataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.cRITÉRIODataGridViewTextBoxColumn.Width = 39;
+            this.cRITÉRIODataGridViewTextBoxColumn.Width = 54;
             // 
             // User
             // 
@@ -646,7 +645,7 @@ namespace BomDia
             this.Sinalizar.HeaderText = "A resgatar";
             this.Sinalizar.MinimumWidth = 8;
             this.Sinalizar.Name = "Sinalizar";
-            this.Sinalizar.Width = 21;
+            this.Sinalizar.Width = 27;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -654,7 +653,7 @@ namespace BomDia
             this.dataGridViewTextBoxColumn2.HeaderText = "Pasta";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 20;
+            this.dataGridViewTextBoxColumn2.Width = 26;
             // 
             // contextMenuStripTempoReal
             // 
@@ -663,21 +662,21 @@ namespace BomDia
             this.ferramentasToolStripMenuItem,
             this.préviaToolStripMenuItem});
             this.contextMenuStripTempoReal.Name = "contextMenuStripTempoReal";
-            this.contextMenuStripTempoReal.Size = new System.Drawing.Size(182, 48);
+            this.contextMenuStripTempoReal.Size = new System.Drawing.Size(244, 68);
             // 
             // ferramentasToolStripMenuItem
             // 
             this.ferramentasToolStripMenuItem.Checked = true;
             this.ferramentasToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
-            this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(243, 32);
             this.ferramentasToolStripMenuItem.Text = "Ocultar Ferramentas";
             this.ferramentasToolStripMenuItem.Click += new System.EventHandler(this.ferramentasToolStripMenuItem_Click);
             // 
             // préviaToolStripMenuItem
             // 
             this.préviaToolStripMenuItem.Name = "préviaToolStripMenuItem";
-            this.préviaToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.préviaToolStripMenuItem.Size = new System.Drawing.Size(243, 32);
             this.préviaToolStripMenuItem.Text = "Prévia";
             this.préviaToolStripMenuItem.Click += new System.EventHandler(this.préviaToolStripMenuItem_Click);
             // 
@@ -696,7 +695,7 @@ namespace BomDia
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dateTimePicker1.RightToLeftLayout = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(108, 43);
+            this.dateTimePicker1.Size = new System.Drawing.Size(108, 61);
             this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.TabStop = false;
             // 
@@ -706,12 +705,12 @@ namespace BomDia
             this.ChaveadorContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cortinaToolStripMenuItem});
             this.ChaveadorContextMenuStrip.Name = "ChaveadorContextMenuStrip";
-            this.ChaveadorContextMenuStrip.Size = new System.Drawing.Size(112, 26);
+            this.ChaveadorContextMenuStrip.Size = new System.Drawing.Size(139, 36);
             // 
             // cortinaToolStripMenuItem
             // 
             this.cortinaToolStripMenuItem.Name = "cortinaToolStripMenuItem";
-            this.cortinaToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.cortinaToolStripMenuItem.Size = new System.Drawing.Size(138, 32);
             this.cortinaToolStripMenuItem.Text = "Tarefas";
             this.cortinaToolStripMenuItem.Click += new System.EventHandler(this.CortinaToolStripMenuItem_Click);
             // 
@@ -721,12 +720,12 @@ namespace BomDia
             this.EditarContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.memorizarToolStripMenuItem});
             this.EditarContextMenuStrip.Name = "EditarContextMenuStrip";
-            this.EditarContextMenuStrip.Size = new System.Drawing.Size(132, 26);
+            this.EditarContextMenuStrip.Size = new System.Drawing.Size(170, 36);
             // 
             // memorizarToolStripMenuItem
             // 
             this.memorizarToolStripMenuItem.Name = "memorizarToolStripMenuItem";
-            this.memorizarToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.memorizarToolStripMenuItem.Size = new System.Drawing.Size(169, 32);
             this.memorizarToolStripMenuItem.Text = "Memorizar";
             this.memorizarToolStripMenuItem.Click += new System.EventHandler(this.memorizarToolStripMenuItem_Click);
             // 
@@ -736,12 +735,12 @@ namespace BomDia
             this.ContextMenuStripVoltar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.voltarToolStripMenuItem});
             this.ContextMenuStripVoltar.Name = "ContextMenuStripVoltar";
-            this.ContextMenuStripVoltar.Size = new System.Drawing.Size(105, 26);
+            this.ContextMenuStripVoltar.Size = new System.Drawing.Size(131, 36);
             // 
             // voltarToolStripMenuItem
             // 
             this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
-            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(130, 32);
             this.voltarToolStripMenuItem.Text = "&Voltar";
             this.voltarToolStripMenuItem.Click += new System.EventHandler(this.VoltarToolStripMenuItem_Click);
             // 
@@ -751,12 +750,12 @@ namespace BomDia
             this.ContextMenuStripHoje.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hojeToolStripMenuItem});
             this.ContextMenuStripHoje.Name = "ContextMenuStripHoje";
-            this.ContextMenuStripHoje.Size = new System.Drawing.Size(100, 26);
+            this.ContextMenuStripHoje.Size = new System.Drawing.Size(122, 36);
             // 
             // hojeToolStripMenuItem
             // 
             this.hojeToolStripMenuItem.Name = "hojeToolStripMenuItem";
-            this.hojeToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.hojeToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
             this.hojeToolStripMenuItem.Text = "Hoje";
             this.hojeToolStripMenuItem.Click += new System.EventHandler(this.hojeToolStripMenuItem_Click);
             // 
@@ -782,7 +781,7 @@ namespace BomDia
             this.CheckBoxIntegrador.ForeColor = System.Drawing.Color.Black;
             this.CheckBoxIntegrador.ImageIndex = 0;
             this.CheckBoxIntegrador.ImageList = this.imageList1;
-            this.CheckBoxIntegrador.Location = new System.Drawing.Point(566, 0);
+            this.CheckBoxIntegrador.Location = new System.Drawing.Point(629, 0);
             this.CheckBoxIntegrador.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.CheckBoxIntegrador.Name = "CheckBoxIntegrador";
             this.CheckBoxIntegrador.Size = new System.Drawing.Size(49, 32);
@@ -830,39 +829,39 @@ namespace BomDia
             this.MSGtoolStripStatusLabel.ForeColor = System.Drawing.Color.Black;
             this.MSGtoolStripStatusLabel.Name = "MSGtoolStripStatusLabel";
             this.MSGtoolStripStatusLabel.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
-            this.MSGtoolStripStatusLabel.Size = new System.Drawing.Size(34, 23);
+            this.MSGtoolStripStatusLabel.Size = new System.Drawing.Size(51, 21);
             this.MSGtoolStripStatusLabel.Text = "Vida";
             this.MSGtoolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStripStatusLabelUsuário
             // 
             this.toolStripStatusLabelUsuário.Name = "toolStripStatusLabelUsuário";
-            this.toolStripStatusLabelUsuário.Size = new System.Drawing.Size(804, 23);
+            this.toolStripStatusLabelUsuário.Size = new System.Drawing.Size(685, 21);
             this.toolStripStatusLabelUsuário.Spring = true;
             this.toolStripStatusLabelUsuário.Text = "Responsável";
             // 
             // SemanaToolStripButton
             // 
             this.SemanaToolStripButton.Name = "SemanaToolStripButton";
-            this.SemanaToolStripButton.Size = new System.Drawing.Size(49, 23);
+            this.SemanaToolStripButton.Size = new System.Drawing.Size(75, 21);
             this.SemanaToolStripButton.Text = "Semana";
             // 
             // textBoxDia
             // 
             this.textBoxDia.Name = "textBoxDia";
-            this.textBoxDia.Size = new System.Drawing.Size(24, 23);
+            this.textBoxDia.Size = new System.Drawing.Size(38, 21);
             this.textBoxDia.Text = "Dia";
             // 
             // textBoxMês
             // 
             this.textBoxMês.Name = "textBoxMês";
-            this.textBoxMês.Size = new System.Drawing.Size(29, 23);
+            this.textBoxMês.Size = new System.Drawing.Size(45, 21);
             this.textBoxMês.Text = "Mês";
             // 
             // textBoxAno
             // 
             this.textBoxAno.Name = "textBoxAno";
-            this.textBoxAno.Size = new System.Drawing.Size(29, 23);
+            this.textBoxAno.Size = new System.Drawing.Size(45, 21);
             this.textBoxAno.Text = "Ano";
             // 
             // toolStripSplitButtonCadeado
@@ -872,7 +871,7 @@ namespace BomDia
             this.toolStripSplitButtonCadeado.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButtonCadeado.Image")));
             this.toolStripSplitButtonCadeado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButtonCadeado.Name = "toolStripSplitButtonCadeado";
-            this.toolStripSplitButtonCadeado.Size = new System.Drawing.Size(75, 26);
+            this.toolStripSplitButtonCadeado.Size = new System.Drawing.Size(105, 25);
             this.toolStripSplitButtonCadeado.Text = "Cadeado";
             this.toolStripSplitButtonCadeado.Click += new System.EventHandler(this.toolStripSplitButton1_Click);
             // 
@@ -887,7 +886,7 @@ namespace BomDia
             this.DataHoje.Margin = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.DataHoje.Name = "DataHoje";
             this.DataHoje.ReadOnly = true;
-            this.DataHoje.Size = new System.Drawing.Size(127, 18);
+            this.DataHoje.Size = new System.Drawing.Size(127, 27);
             this.DataHoje.TabIndex = 16;
             this.DataHoje.TabStop = false;
             this.DataHoje.Visible = false;
@@ -913,7 +912,7 @@ namespace BomDia
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Transparent;
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer7);
             this.splitContainer1.Size = new System.Drawing.Size(1067, 557);
-            this.splitContainer1.SplitterDistance = 106;
+            this.splitContainer1.SplitterDistance = 116;
             this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 17;
             // 
@@ -937,7 +936,7 @@ namespace BomDia
             this.splitContainer5.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.splitContainer5.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.splitContainer5.Panel2.Controls.Add(this.tableLayoutPanel9);
-            this.splitContainer5.Size = new System.Drawing.Size(1067, 106);
+            this.splitContainer5.Size = new System.Drawing.Size(1067, 116);
             this.splitContainer5.SplitterDistance = 164;
             this.splitContainer5.SplitterWidth = 1;
             this.splitContainer5.TabIndex = 11;
@@ -954,7 +953,7 @@ namespace BomDia
             this.tableLayoutPanel15.RowCount = 2;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(164, 106);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(164, 116);
             this.tableLayoutPanel15.TabIndex = 23;
             // 
             // panel2
@@ -964,7 +963,7 @@ namespace BomDia
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 81);
+            this.panel2.Location = new System.Drawing.Point(0, 91);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(164, 25);
@@ -989,7 +988,7 @@ namespace BomDia
             this.label12.Location = new System.Drawing.Point(3, 4);
             this.label12.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 15);
+            this.label12.Size = new System.Drawing.Size(59, 22);
             this.label12.TabIndex = 17;
             this.label12.Text = "Níveis";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1013,7 +1012,7 @@ namespace BomDia
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(158, 75);
+            this.panel3.Size = new System.Drawing.Size(158, 85);
             this.panel3.TabIndex = 0;
             // 
             // DetalhePorQue
@@ -1021,7 +1020,7 @@ namespace BomDia
             this.DetalhePorQue.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "PORQUE", true));
             this.DetalhePorQue.Location = new System.Drawing.Point(11, 60);
             this.DetalhePorQue.Name = "DetalhePorQue";
-            this.DetalhePorQue.Size = new System.Drawing.Size(48, 20);
+            this.DetalhePorQue.Size = new System.Drawing.Size(48, 26);
             this.DetalhePorQue.TabIndex = 13;
             this.DetalhePorQue.Visible = false;
             // 
@@ -1052,6 +1051,7 @@ namespace BomDia
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel11, 1, 2);
             this.tableLayoutPanel9.Controls.Add(this.toolStrip2, 0, 1);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel13, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.textBox3, 0, 2);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -1059,8 +1059,8 @@ namespace BomDia
             this.tableLayoutPanel9.RowCount = 3;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(902, 106);
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(902, 116);
             this.tableLayoutPanel9.TabIndex = 3;
             this.tableLayoutPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel9_Paint_1);
             // 
@@ -1072,37 +1072,107 @@ namespace BomDia
             this.panel1.Location = new System.Drawing.Point(72, 25);
             this.panel1.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(830, 51);
+            this.panel1.Size = new System.Drawing.Size(830, 59);
             this.panel1.TabIndex = 1;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.29475F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.70525F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
+            this.tableLayoutPanel7.Controls.Add(this.PictureBoxEditar, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.flowLayoutPanel4, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.OQuePretendido, 0, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(830, 59);
+            this.tableLayoutPanel7.TabIndex = 1;
+            this.tableLayoutPanel7.TabStop = true;
             // 
             // PictureBoxEditar
             // 
             this.PictureBoxEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureBoxEditar.BackColor = System.Drawing.Color.Transparent;
             this.PictureBoxEditar.Image = global::Vida.Properties.Resources.newrecord;
-            this.PictureBoxEditar.Location = new System.Drawing.Point(784, 12);
+            this.PictureBoxEditar.Location = new System.Drawing.Point(784, 16);
             this.PictureBoxEditar.Name = "PictureBoxEditar";
             this.PictureBoxEditar.Size = new System.Drawing.Size(27, 27);
             this.PictureBoxEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBoxEditar.TabIndex = 5;
             this.PictureBoxEditar.TabStop = false;
             // 
-            // textBox1
+            // flowLayoutPanel4
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "IND", true));
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(766, 0);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(65, 22);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TabStop = false;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel4.Controls.Add(this.label7);
+            this.flowLayoutPanel4.Controls.Add(this.QuandoPrevisto);
+            this.flowLayoutPanel4.Controls.Add(this.dateTimePicker3);
+            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(516, 0);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(250, 59);
+            this.flowLayoutPanel4.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Margin = new System.Windows.Forms.Padding(0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 32);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "&Quando:";
+            // 
+            // QuandoPrevisto
+            // 
+            this.QuandoPrevisto.BackColor = System.Drawing.Color.White;
+            this.QuandoPrevisto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "QUANDO", true));
+            this.QuandoPrevisto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuandoPrevisto.Location = new System.Drawing.Point(74, 0);
+            this.QuandoPrevisto.Margin = new System.Windows.Forms.Padding(0);
+            this.QuandoPrevisto.Mask = "00/00/0000";
+            this.QuandoPrevisto.Name = "QuandoPrevisto";
+            this.QuandoPrevisto.Size = new System.Drawing.Size(109, 32);
+            this.QuandoPrevisto.TabIndex = 2;
+            this.QuandoPrevisto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.QuandoPrevisto_KeyPress);
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CustomFormat = "dddd";
+            this.dateTimePicker3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "QUANDO", true));
+            this.dateTimePicker3.Enabled = false;
+            this.dateTimePicker3.Font = new System.Drawing.Font("OpenSymbol", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker3.Location = new System.Drawing.Point(0, 32);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(0);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dateTimePicker3.Size = new System.Drawing.Size(180, 29);
+            this.dateTimePicker3.TabIndex = 3;
+            // 
+            // OQuePretendido
+            // 
+            this.OQuePretendido.BackColor = System.Drawing.Color.White;
+            this.OQuePretendido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OQuePretendido.ContextMenuStrip = this.EditarContextMenuStrip;
+            this.OQuePretendido.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "OQUE", true));
+            this.OQuePretendido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OQuePretendido.Font = new System.Drawing.Font("Malgun Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OQuePretendido.Location = new System.Drawing.Point(3, 4);
+            this.OQuePretendido.Margin = new System.Windows.Forms.Padding(3, 4, 0, 0);
+            this.OQuePretendido.Name = "OQuePretendido";
+            this.OQuePretendido.Size = new System.Drawing.Size(513, 55);
+            this.OQuePretendido.TabIndex = 1;
+            this.OQuePretendido.Text = "";
+            this.OQuePretendido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OQuePretendido_KeyPress);
             // 
             // tableLayoutPanel11
             // 
@@ -1120,12 +1190,12 @@ namespace BomDia
             this.tableLayoutPanel11.Controls.Add(this.bindingNavigator3, 5, 0);
             this.tableLayoutPanel11.Controls.Add(this.ComboBoxPorque, 4, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(75, 76);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(75, 84);
             this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(827, 30);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(827, 32);
             this.tableLayoutPanel11.TabIndex = 2;
             this.tableLayoutPanel11.TabStop = true;
             // 
@@ -1148,7 +1218,7 @@ namespace BomDia
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 30);
+            this.label6.Size = new System.Drawing.Size(125, 32);
             this.label6.TabIndex = 5;
             this.label6.Text = "Meu &Planejado:";
             // 
@@ -1163,7 +1233,7 @@ namespace BomDia
             this.DiaMarcadoPretendido.Name = "DiaMarcadoPretendido";
             this.DiaMarcadoPretendido.ShowCheckBox = true;
             this.DiaMarcadoPretendido.ShowUpDown = true;
-            this.DiaMarcadoPretendido.Size = new System.Drawing.Size(129, 23);
+            this.DiaMarcadoPretendido.Size = new System.Drawing.Size(129, 30);
             this.DiaMarcadoPretendido.TabIndex = 5;
             this.DiaMarcadoPretendido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DiaMarcadoPretendido_KeyPress_1);
             // 
@@ -1175,7 +1245,7 @@ namespace BomDia
             this.label5.Location = new System.Drawing.Point(266, 6);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 18);
+            this.label5.Size = new System.Drawing.Size(192, 27);
             this.label5.TabIndex = 6;
             // 
             // bindingNavigator3
@@ -1195,7 +1265,7 @@ namespace BomDia
             this.label9,
             this.ButtonAnexa});
             this.bindingNavigator3.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.bindingNavigator3.Location = new System.Drawing.Point(748, 0);
+            this.bindingNavigator3.Location = new System.Drawing.Point(735, 0);
             this.bindingNavigator3.MoveFirstItem = null;
             this.bindingNavigator3.MoveLastItem = null;
             this.bindingNavigator3.MoveNextItem = null;
@@ -1204,7 +1274,7 @@ namespace BomDia
             this.bindingNavigator3.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.bindingNavigator3.PositionItem = null;
             this.bindingNavigator3.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.bindingNavigator3.Size = new System.Drawing.Size(79, 30);
+            this.bindingNavigator3.Size = new System.Drawing.Size(92, 32);
             this.bindingNavigator3.TabIndex = 1;
             this.bindingNavigator3.TabStop = true;
             this.bindingNavigator3.Text = "bindingNavigator1";
@@ -1224,7 +1294,7 @@ namespace BomDia
             this.ButtonAnexa.Image = ((System.Drawing.Image)(resources.GetObject("ButtonAnexa.Image")));
             this.ButtonAnexa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ButtonAnexa.Name = "ButtonAnexa";
-            this.ButtonAnexa.Size = new System.Drawing.Size(34, 27);
+            this.ButtonAnexa.Size = new System.Drawing.Size(47, 27);
             this.ButtonAnexa.Text = "✔";
             this.ButtonAnexa.ToolTipText = "Gravar";
             this.ButtonAnexa.Click += new System.EventHandler(this.ButtonAnexa_Click);
@@ -1237,15 +1307,111 @@ namespace BomDia
             this.ComboBoxPorque.DataSource = this.PrioridadesBindingSource;
             this.ComboBoxPorque.DisplayMember = "Denomination";
             this.ComboBoxPorque.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxPorque.ItemHeight = 16;
-            this.ComboBoxPorque.Location = new System.Drawing.Point(535, 2);
+            this.ComboBoxPorque.ItemHeight = 25;
+            this.ComboBoxPorque.Location = new System.Drawing.Point(535, 0);
             this.ComboBoxPorque.Margin = new System.Windows.Forms.Padding(3, 0, 3, 1);
             this.ComboBoxPorque.Name = "ComboBoxPorque";
-            this.ComboBoxPorque.Size = new System.Drawing.Size(188, 24);
+            this.ComboBoxPorque.Size = new System.Drawing.Size(188, 33);
             this.ComboBoxPorque.TabIndex = 7;
             this.ComboBoxPorque.ValueMember = "ItemPrioridade";
             this.ComboBoxPorque.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPorque_SelectedIndexChanged);
             this.ComboBoxPorque.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ComboBoxPorque_KeyPress);
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabelNovo,
+            this.button8});
+            this.toolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
+            this.toolStrip2.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip2.Size = new System.Drawing.Size(65, 59);
+            this.toolStrip2.Stretch = true;
+            this.toolStrip2.TabIndex = 0;
+            this.toolStrip2.TabStop = true;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // toolStripLabelNovo
+            // 
+            this.toolStripLabelNovo.Name = "toolStripLabelNovo";
+            this.toolStripLabelNovo.Size = new System.Drawing.Size(62, 25);
+            this.toolStripLabelNovo.Text = "No&vo";
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.Control;
+            this.button8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.button8.DropDownButtonWidth = 15;
+            this.button8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem3});
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.button8.ImageTransparentColor = System.Drawing.Color.White;
+            this.button8.Name = "button8";
+            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button8.Size = new System.Drawing.Size(62, 17);
+            this.button8.Tag = "Apagado";
+            this.button8.Text = "Novo Ite&m";
+            this.button8.ButtonClick += new System.EventHandler(this.button8_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(223, 34);
+            this.toolStripMenuItem3.Text = "Pasta do Item";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // tableLayoutPanel13
+            // 
+            this.tableLayoutPanel13.AutoSize = true;
+            this.tableLayoutPanel13.ColumnCount = 2;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel13.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel13.Controls.Add(this.label11, 0, 0);
+            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(68, 0);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.RowCount = 1;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(834, 25);
+            this.tableLayoutPanel13.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "IND", true));
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(766, 0);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(65, 30);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TabStop = false;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label11.Font = new System.Drawing.Font("Miriam Libre", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label11.Location = new System.Drawing.Point(3, 0);
+            this.label11.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(763, 25);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "CADERNETA";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // splitContainer7
             // 
@@ -1263,8 +1429,8 @@ namespace BomDia
             // splitContainer7.Panel2
             // 
             this.splitContainer7.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer7.Size = new System.Drawing.Size(1067, 449);
-            this.splitContainer7.SplitterDistance = 246;
+            this.splitContainer7.Size = new System.Drawing.Size(1067, 439);
+            this.splitContainer7.SplitterDistance = 240;
             this.splitContainer7.SplitterWidth = 6;
             this.splitContainer7.TabIndex = 12;
             // 
@@ -1285,7 +1451,7 @@ namespace BomDia
             this.tableLayoutPanel10.RowCount = 2;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1067, 246);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1067, 240);
             this.tableLayoutPanel10.TabIndex = 12;
             // 
             // splitContainer2
@@ -1293,7 +1459,7 @@ namespace BomDia
             this.splitContainer2.ContextMenuStrip = this.ListaDeDatasContextMenuStrip;
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer2.Location = new System.Drawing.Point(45, 32);
+            this.splitContainer2.Location = new System.Drawing.Point(45, 35);
             this.splitContainer2.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.splitContainer2.Name = "splitContainer2";
             // 
@@ -1305,7 +1471,7 @@ namespace BomDia
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer2.Size = new System.Drawing.Size(1022, 214);
+            this.splitContainer2.Size = new System.Drawing.Size(1022, 205);
             this.splitContainer2.SplitterDistance = 118;
             this.splitContainer2.TabIndex = 14;
             // 
@@ -1316,14 +1482,14 @@ namespace BomDia
             this.ListaDeDatasContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.portalToolStripMenuItem});
             this.ListaDeDatasContextMenuStrip.Name = "ListaDeDatasContextMenuStrip";
-            this.ListaDeDatasContextMenuStrip.Size = new System.Drawing.Size(114, 34);
+            this.ListaDeDatasContextMenuStrip.Size = new System.Drawing.Size(138, 36);
             // 
             // portalToolStripMenuItem
             // 
             this.portalToolStripMenuItem.Image = global::Vida.Properties.Resources.CALENDAR;
             this.portalToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.portalToolStripMenuItem.Name = "portalToolStripMenuItem";
-            this.portalToolStripMenuItem.Size = new System.Drawing.Size(113, 30);
+            this.portalToolStripMenuItem.Size = new System.Drawing.Size(137, 32);
             this.portalToolStripMenuItem.Text = "Portal";
             this.portalToolStripMenuItem.Click += new System.EventHandler(this.portalToolStripMenuItem_Click);
             // 
@@ -1341,7 +1507,7 @@ namespace BomDia
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.56932F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.43069F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(118, 214);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(118, 205);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // dateTimePicker2
@@ -1351,9 +1517,9 @@ namespace BomDia
             this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Top;
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(3, 178);
+            this.dateTimePicker2.Location = new System.Drawing.Point(3, 169);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(112, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(112, 30);
             this.dateTimePicker2.TabIndex = 19;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
@@ -1366,7 +1532,7 @@ namespace BomDia
             this.label2.ImageList = this.PortalImageList;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 22);
+            this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 12;
             this.label2.Text = "Portal";
             // 
@@ -1381,6 +1547,7 @@ namespace BomDia
             this.ListaDeDatas.ContextMenuStrip = this.ContextMenuStripHoje;
             this.ListaDeDatas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListaDeDatas.FormattingEnabled = true;
+            this.ListaDeDatas.ItemHeight = 20;
             this.ListaDeDatas.Items.AddRange(new object[] {
             "03/11/2021",
             "04/11/2021",
@@ -3568,10 +3735,10 @@ namespace BomDia
             "26/10/2027",
             "27/10/2027",
             "28/10/2027"});
-            this.ListaDeDatas.Location = new System.Drawing.Point(3, 25);
+            this.ListaDeDatas.Location = new System.Drawing.Point(3, 23);
             this.ListaDeDatas.Name = "ListaDeDatas";
             this.ListaDeDatas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ListaDeDatas.Size = new System.Drawing.Size(112, 147);
+            this.ListaDeDatas.Size = new System.Drawing.Size(112, 140);
             this.ListaDeDatas.TabIndex = 0;
             this.ListaDeDatas.SelectedValueChanged += new System.EventHandler(this.ListaDeDatas_SelectedValueChanged);
             this.ListaDeDatas.Enter += new System.EventHandler(this.ListaDeDatas_Enter);
@@ -3588,7 +3755,7 @@ namespace BomDia
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 214);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 205);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // tabControl2
@@ -3605,7 +3772,7 @@ namespace BomDia
             this.tabControl2.Multiline = true;
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(900, 214);
+            this.tabControl2.Size = new System.Drawing.Size(900, 205);
             this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl2.TabIndex = 0;
             // 
@@ -3616,7 +3783,7 @@ namespace BomDia
             this.TabPageItens.Location = new System.Drawing.Point(4, 4);
             this.TabPageItens.Margin = new System.Windows.Forms.Padding(0);
             this.TabPageItens.Name = "TabPageItens";
-            this.TabPageItens.Size = new System.Drawing.Size(820, 206);
+            this.TabPageItens.Size = new System.Drawing.Size(760, 197);
             this.TabPageItens.TabIndex = 0;
             this.TabPageItens.Text = "CONTEXTOS";
             this.TabPageItens.UseVisualStyleBackColor = true;
@@ -3634,7 +3801,7 @@ namespace BomDia
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(820, 206);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(760, 197);
             this.tableLayoutPanel12.TabIndex = 9;
             // 
             // bindingNavigator1
@@ -3657,7 +3824,7 @@ namespace BomDia
             this.toolStripButton4,
             this.toolStripButton5});
             this.bindingNavigator1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.bindingNavigator1.Location = new System.Drawing.Point(780, 0);
+            this.bindingNavigator1.Location = new System.Drawing.Point(720, 0);
             this.bindingNavigator1.MoveFirstItem = this.toolStripButton2;
             this.bindingNavigator1.MoveLastItem = this.toolStripButton5;
             this.bindingNavigator1.MoveNextItem = this.toolStripButton4;
@@ -3716,7 +3883,7 @@ namespace BomDia
             this.TabPageDatas.Location = new System.Drawing.Point(4, 4);
             this.TabPageDatas.Name = "TabPageDatas";
             this.TabPageDatas.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageDatas.Size = new System.Drawing.Size(820, 203);
+            this.TabPageDatas.Size = new System.Drawing.Size(760, 206);
             this.TabPageDatas.TabIndex = 1;
             this.TabPageDatas.Text = "VISÃO CALENDÁRIO";
             this.TabPageDatas.UseVisualStyleBackColor = true;
@@ -3774,7 +3941,7 @@ namespace BomDia
             this.toolStripButton6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton6.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton6.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton6.Text = "Mover primeiro";
             // 
             // toolStripButton7
@@ -3783,7 +3950,7 @@ namespace BomDia
             this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton7.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton7.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton7.Text = "Mover anterior";
             // 
             // toolStripTextBox2
@@ -3792,7 +3959,7 @@ namespace BomDia
             this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripTextBox2.Name = "toolStripTextBox2";
             this.toolStripTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripTextBox2.Size = new System.Drawing.Size(58, 25);
+            this.toolStripTextBox2.Size = new System.Drawing.Size(58, 34);
             this.toolStripTextBox2.Text = "0";
             this.toolStripTextBox2.ToolTipText = "Posição atual";
             // 
@@ -3802,7 +3969,7 @@ namespace BomDia
             this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
             this.toolStripButton8.Name = "toolStripButton8";
             this.toolStripButton8.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton8.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton8.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton8.Text = "Mover próximo";
             // 
             // toolStripButton9
@@ -3811,7 +3978,7 @@ namespace BomDia
             this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton9.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton9.Text = "Útimo";
             this.toolStripButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
@@ -3824,7 +3991,7 @@ namespace BomDia
             this.TabPageReferencias.Location = new System.Drawing.Point(4, 4);
             this.TabPageReferencias.Name = "TabPageReferencias";
             this.TabPageReferencias.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageReferencias.Size = new System.Drawing.Size(820, 203);
+            this.TabPageReferencias.Size = new System.Drawing.Size(760, 206);
             this.TabPageReferencias.TabIndex = 2;
             this.TabPageReferencias.Text = "REFERÊNCIAS";
             this.TabPageReferencias.UseVisualStyleBackColor = true;
@@ -3842,14 +4009,14 @@ namespace BomDia
             // 
             // dataGridView3
             // 
-            dataGridViewCellStyle201.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle201.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle201.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle201.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle201.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle201.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle201.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle201;
+            dataGridViewCellStyle129.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle129.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle129.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle129.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle129.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle129.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle129.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle129;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.segmentoDataGridViewTextBoxColumn,
@@ -3903,14 +4070,14 @@ namespace BomDia
             this.itemPrioridadeDataGridViewTextBoxColumn,
             this.denominationDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.PrioridadesBindingSource;
-            dataGridViewCellStyle202.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle202.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle202.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle202.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle202.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle202.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle202.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle202;
+            dataGridViewCellStyle130.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle130.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle130.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle130.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle130.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle130.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle130.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle130;
             this.dataGridView2.Location = new System.Drawing.Point(6, 172);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(0, 4, 4, 4);
             this.dataGridView2.Name = "dataGridView2";
@@ -3943,7 +4110,7 @@ namespace BomDia
             this.TabPageCalculadora.Location = new System.Drawing.Point(4, 4);
             this.TabPageCalculadora.Name = "TabPageCalculadora";
             this.TabPageCalculadora.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageCalculadora.Size = new System.Drawing.Size(820, 203);
+            this.TabPageCalculadora.Size = new System.Drawing.Size(760, 206);
             this.TabPageCalculadora.TabIndex = 3;
             this.TabPageCalculadora.Text = "Calculadora";
             this.TabPageCalculadora.UseVisualStyleBackColor = true;
@@ -3975,7 +4142,7 @@ namespace BomDia
             this.labelValor.AutoSize = true;
             this.labelValor.Location = new System.Drawing.Point(3, 0);
             this.labelValor.Name = "labelValor";
-            this.labelValor.Size = new System.Drawing.Size(40, 19);
+            this.labelValor.Size = new System.Drawing.Size(57, 28);
             this.labelValor.TabIndex = 2;
             this.labelValor.Text = "&Valor";
             // 
@@ -3983,7 +4150,7 @@ namespace BomDia
             // 
             this.textBoxAgendaData.Location = new System.Drawing.Point(121, 95);
             this.textBoxAgendaData.Name = "textBoxAgendaData";
-            this.textBoxAgendaData.Size = new System.Drawing.Size(185, 25);
+            this.textBoxAgendaData.Size = new System.Drawing.Size(185, 34);
             this.textBoxAgendaData.TabIndex = 7;
             // 
             // Resultado
@@ -4030,7 +4197,7 @@ namespace BomDia
             // 
             this.textBoxSegundos.Location = new System.Drawing.Point(215, 11);
             this.textBoxSegundos.Name = "textBoxSegundos";
-            this.textBoxSegundos.Size = new System.Drawing.Size(48, 25);
+            this.textBoxSegundos.Size = new System.Drawing.Size(48, 34);
             this.textBoxSegundos.TabIndex = 3;
             // 
             // button7
@@ -4046,28 +4213,28 @@ namespace BomDia
             // 
             this.textBoxSpanMinutos.Location = new System.Drawing.Point(154, 11);
             this.textBoxSpanMinutos.Name = "textBoxSpanMinutos";
-            this.textBoxSpanMinutos.Size = new System.Drawing.Size(48, 25);
+            this.textBoxSpanMinutos.Size = new System.Drawing.Size(48, 34);
             this.textBoxSpanMinutos.TabIndex = 2;
             // 
             // textBoxSpanAno
             // 
             this.textBoxSpanAno.Location = new System.Drawing.Point(3, 11);
             this.textBoxSpanAno.Name = "textBoxSpanAno";
-            this.textBoxSpanAno.Size = new System.Drawing.Size(48, 25);
+            this.textBoxSpanAno.Size = new System.Drawing.Size(48, 34);
             this.textBoxSpanAno.TabIndex = 0;
             // 
             // textBoxSpanHoras
             // 
             this.textBoxSpanHoras.Location = new System.Drawing.Point(75, 11);
             this.textBoxSpanHoras.Name = "textBoxSpanHoras";
-            this.textBoxSpanHoras.Size = new System.Drawing.Size(48, 25);
+            this.textBoxSpanHoras.Size = new System.Drawing.Size(48, 34);
             this.textBoxSpanHoras.TabIndex = 1;
             // 
             // textBoxAgendaTexto
             // 
             this.textBoxAgendaTexto.Location = new System.Drawing.Point(121, 3);
             this.textBoxAgendaTexto.Name = "textBoxAgendaTexto";
-            this.textBoxAgendaTexto.Size = new System.Drawing.Size(185, 25);
+            this.textBoxAgendaTexto.Size = new System.Drawing.Size(185, 34);
             this.textBoxAgendaTexto.TabIndex = 2;
             // 
             // button5
@@ -4084,28 +4251,27 @@ namespace BomDia
             // 
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel6.ColumnCount = 9;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 291F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 216F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 301F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.tableLayoutPanel6.ContextMenuStrip = this.contextMenuStripTempoReal;
             this.tableLayoutPanel6.Controls.Add(this.DiaBomDiaLabel, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.bindingNavigator4, 8, 0);
-            this.tableLayoutPanel6.Controls.Add(this.ButtonMoveLista, 5, 0);
-            this.tableLayoutPanel6.Controls.Add(this.label8, 4, 0);
-            this.tableLayoutPanel6.Controls.Add(this.textBox3, 6, 0);
-            this.tableLayoutPanel6.Controls.Add(this.CheckBoxIntegrador, 3, 0);
             this.tableLayoutPanel6.Controls.Add(this.toolStrip1, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.checkBoxExibirPrévia, 7, 0);
             this.tableLayoutPanel6.Controls.Add(this.BindingExclui, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label8, 6, 0);
+            this.tableLayoutPanel6.Controls.Add(this.ButtonMoveLista, 5, 0);
+            this.tableLayoutPanel6.Controls.Add(this.CheckBoxIntegrador, 3, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(42, 0);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(42, 3);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4179,6 +4345,120 @@ namespace BomDia
             this.toolStripTextBox3.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
             this.toolStripTextBox3.ToolTipText = "Posição atual";
             // 
+            // ButtonMoveLista
+            // 
+            this.ButtonMoveLista.AutoSize = true;
+            this.ButtonMoveLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonMoveLista.FlatAppearance.BorderSize = 0;
+            this.ButtonMoveLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonMoveLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonMoveLista.ForeColor = System.Drawing.Color.Blue;
+            this.ButtonMoveLista.ImageIndex = 0;
+            this.ButtonMoveLista.ImageList = this.imageListBandeja;
+            this.ButtonMoveLista.Location = new System.Drawing.Point(699, 0);
+            this.ButtonMoveLista.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonMoveLista.Name = "ButtonMoveLista";
+            this.ButtonMoveLista.Size = new System.Drawing.Size(44, 32);
+            this.ButtonMoveLista.TabIndex = 17;
+            this.toolTipBandeja.SetToolTip(this.ButtonMoveLista, "Resgatar tarefas marcadas");
+            this.ButtonMoveLista.UseVisualStyleBackColor = true;
+            this.ButtonMoveLista.Click += new System.EventHandler(this.ButtonMoveLista_Click);
+            // 
+            // imageListBandeja
+            // 
+            this.imageListBandeja.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListBandeja.ImageStream")));
+            this.imageListBandeja.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListBandeja.Images.SetKeyName(0, "bandeja.png");
+            this.imageListBandeja.Images.SetKeyName(1, "CRDFLE12.ICO");
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(746, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 32);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Recuperar";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.Blue;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "IND", true));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
+            this.textBox3.Location = new System.Drawing.Point(0, 87);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(47, 23);
+            this.textBox3.TabIndex = 1;
+            this.textBox3.TabStop = false;
+            this.textBox3.Visible = false;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton10,
+            this.toolStripSeparator2,
+            this.comboBoxCritério});
+            this.toolStrip1.Location = new System.Drawing.Point(325, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(301, 32);
+            this.toolStrip1.TabIndex = 19;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // comboBoxCritério
+            // 
+            this.comboBoxCritério.BackColor = System.Drawing.Color.Cyan;
+            this.comboBoxCritério.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCritério.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxCritério.Items.AddRange(new object[] {
+            "Contextual",
+            "Programático"});
+            this.comboBoxCritério.Name = "comboBoxCritério";
+            this.comboBoxCritério.Size = new System.Drawing.Size(145, 33);
+            // 
+            // toolStripButton10
+            // 
+            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
+            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.White;
+            this.toolStripButton10.Margin = new System.Windows.Forms.Padding(0);
+            this.toolStripButton10.Name = "toolStripButton10";
+            this.toolStripButton10.Size = new System.Drawing.Size(94, 32);
+            this.toolStripButton10.Text = "Aplicar";
+            this.toolStripButton10.ToolTipText = "Filtrar por categoria";
+            this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
+            // checkBoxExibirPrévia
+            // 
+            this.checkBoxExibirPrévia.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxExibirPrévia.AutoSize = true;
+            this.checkBoxExibirPrévia.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxExibirPrévia.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxExibirPrévia.Checked = true;
+            this.checkBoxExibirPrévia.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxExibirPrévia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxExibirPrévia.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxExibirPrévia.Location = new System.Drawing.Point(830, 0);
+            this.checkBoxExibirPrévia.Margin = new System.Windows.Forms.Padding(0);
+            this.checkBoxExibirPrévia.Name = "checkBoxExibirPrévia";
+            this.checkBoxExibirPrévia.Size = new System.Drawing.Size(92, 32);
+            this.checkBoxExibirPrévia.TabIndex = 7;
+            this.checkBoxExibirPrévia.Text = "Prévia";
+            this.checkBoxExibirPrévia.UseVisualStyleBackColor = false;
+            this.checkBoxExibirPrévia.Click += new System.EventHandler(this.checkBoxExibirPrévia_Click);
+            // 
             // BindingExclui
             // 
             this.BindingExclui.AddNewItem = null;
@@ -4192,7 +4472,7 @@ namespace BomDia
             this.bindingNavigatorDeleteItem,
             this.textBox2});
             this.BindingExclui.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.BindingExclui.Location = new System.Drawing.Point(291, 0);
+            this.BindingExclui.Location = new System.Drawing.Point(216, 0);
             this.BindingExclui.MoveFirstItem = null;
             this.BindingExclui.MoveLastItem = null;
             this.BindingExclui.MoveNextItem = null;
@@ -4221,147 +4501,19 @@ namespace BomDia
             // textBox2
             // 
             this.textBox2.AutoSize = false;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(60, 31);
-            // 
-            // ButtonMoveLista
-            // 
-            this.ButtonMoveLista.AutoSize = true;
-            this.ButtonMoveLista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonMoveLista.FlatAppearance.BorderSize = 0;
-            this.ButtonMoveLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonMoveLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonMoveLista.ForeColor = System.Drawing.Color.Blue;
-            this.ButtonMoveLista.ImageIndex = 0;
-            this.ButtonMoveLista.ImageList = this.imageListBandeja;
-            this.ButtonMoveLista.Location = new System.Drawing.Point(703, 0);
-            this.ButtonMoveLista.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonMoveLista.Name = "ButtonMoveLista";
-            this.ButtonMoveLista.Size = new System.Drawing.Size(69, 32);
-            this.ButtonMoveLista.TabIndex = 17;
-            this.toolTipBandeja.SetToolTip(this.ButtonMoveLista, "Resgatar tarefas marcadas");
-            this.ButtonMoveLista.UseVisualStyleBackColor = true;
-            this.ButtonMoveLista.Click += new System.EventHandler(this.ButtonMoveLista_Click);
-            // 
-            // imageListBandeja
-            // 
-            this.imageListBandeja.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListBandeja.ImageStream")));
-            this.imageListBandeja.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListBandeja.Images.SetKeyName(0, "bandeja.png");
-            this.imageListBandeja.Images.SetKeyName(1, "CRDFLE12.ICO");
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(618, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 32);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Recuperar";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.Blue;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "IND", true));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(772, 3);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(47, 16);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.TabStop = false;
-            this.textBox3.Visible = false;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel3,
-            this.comboBoxCritério,
-            this.toolStripButton10,
-            this.toolStripSeparator2});
-            this.toolStrip1.Location = new System.Drawing.Point(399, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(164, 32);
-            this.toolStrip1.TabIndex = 19;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLabel3.BackColor = System.Drawing.Color.Silver;
-            this.toolStripLabel3.ForeColor = System.Drawing.Color.Black;
-            this.toolStripLabel3.Image = global::Vida.Properties.Resources.FilterRegions_24;
-            this.toolStripLabel3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(90, 29);
-            this.toolStripLabel3.Text = "Segmentos";
-            this.toolStripLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolStripLabel3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            // 
-            // comboBoxCritério
-            // 
-            this.comboBoxCritério.BackColor = System.Drawing.Color.Cyan;
-            this.comboBoxCritério.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxCritério.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxCritério.Items.AddRange(new object[] {
-            "Contextual",
-            "Programático"});
-            this.comboBoxCritério.Name = "comboBoxCritério";
-            this.comboBoxCritério.Size = new System.Drawing.Size(145, 23);
-            // 
-            // toolStripButton10
-            // 
-            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
-            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.White;
-            this.toolStripButton10.Margin = new System.Windows.Forms.Padding(0);
-            this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(48, 19);
-            this.toolStripButton10.Text = "Aplicar";
-            this.toolStripButton10.ToolTipText = "Filtrar por categoria";
-            this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // checkBoxExibirPrévia
-            // 
-            this.checkBoxExibirPrévia.AutoSize = true;
-            this.checkBoxExibirPrévia.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxExibirPrévia.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxExibirPrévia.Checked = true;
-            this.checkBoxExibirPrévia.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxExibirPrévia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxExibirPrévia.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxExibirPrévia.Location = new System.Drawing.Point(819, 0);
-            this.checkBoxExibirPrévia.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBoxExibirPrévia.Name = "checkBoxExibirPrévia";
-            this.checkBoxExibirPrévia.Size = new System.Drawing.Size(72, 21);
-            this.checkBoxExibirPrévia.TabIndex = 7;
-            this.checkBoxExibirPrévia.Text = "Prévia";
-            this.checkBoxExibirPrévia.UseVisualStyleBackColor = false;
-            this.checkBoxExibirPrévia.Click += new System.EventHandler(this.checkBoxExibirPrévia_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.Control;
             this.panel4.Controls.Add(this.BindingNavegador);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 32);
+            this.panel4.Location = new System.Drawing.Point(0, 35);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(42, 214);
+            this.panel4.Size = new System.Drawing.Size(42, 205);
             this.panel4.TabIndex = 15;
             // 
             // BindingNavegador
@@ -4476,7 +4628,7 @@ namespace BomDia
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(42, 32);
+            this.panel5.Size = new System.Drawing.Size(42, 35);
             this.panel5.TabIndex = 16;
             // 
             // PastaOculto
@@ -4484,7 +4636,7 @@ namespace BomDia
             this.PastaOculto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "Pasta", true));
             this.PastaOculto.Location = new System.Drawing.Point(6, 3);
             this.PastaOculto.Name = "PastaOculto";
-            this.PastaOculto.Size = new System.Drawing.Size(36, 20);
+            this.PastaOculto.Size = new System.Drawing.Size(36, 26);
             this.PastaOculto.TabIndex = 25;
             // 
             // splitContainer3
@@ -4502,7 +4654,7 @@ namespace BomDia
             // 
             this.splitContainer3.Panel2.AutoScroll = true;
             this.splitContainer3.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer3.Size = new System.Drawing.Size(1067, 197);
+            this.splitContainer3.Size = new System.Drawing.Size(1067, 193);
             this.splitContainer3.SplitterDistance = 484;
             this.splitContainer3.TabIndex = 1;
             // 
@@ -4523,7 +4675,7 @@ namespace BomDia
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.10753F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(484, 197);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(484, 193);
             this.tableLayoutPanel3.TabIndex = 16;
             // 
             // dataGridViewMarcados
@@ -4535,14 +4687,14 @@ namespace BomDia
             this.dataGridViewMarcados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewMarcados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridViewMarcados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle203.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle203.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle203.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle203.ForeColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle203.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle203.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle203.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewMarcados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle203;
+            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle131.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle131.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle131.ForeColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle131.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle131.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle131.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewMarcados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle131;
             this.dataGridViewMarcados.ColumnHeadersHeight = 20;
             this.dataGridViewMarcados.ColumnHeadersVisible = false;
             this.dataGridViewMarcados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -4556,14 +4708,14 @@ namespace BomDia
             this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewCheckBoxColumn2});
-            dataGridViewCellStyle209.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle209.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle209.Font = new System.Drawing.Font("Cambria", 12F);
-            dataGridViewCellStyle209.ForeColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle209.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            dataGridViewCellStyle209.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle209.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewMarcados.DefaultCellStyle = dataGridViewCellStyle209;
+            dataGridViewCellStyle137.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle137.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle137.Font = new System.Drawing.Font("Cambria", 12F);
+            dataGridViewCellStyle137.ForeColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle137.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle137.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle137.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewMarcados.DefaultCellStyle = dataGridViewCellStyle137;
             this.dataGridViewMarcados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewMarcados.EnableHeadersVisualStyles = false;
             this.dataGridViewMarcados.Location = new System.Drawing.Point(3, 37);
@@ -4573,19 +4725,19 @@ namespace BomDia
             this.dataGridViewMarcados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewMarcados.RowHeadersVisible = false;
             this.dataGridViewMarcados.RowHeadersWidth = 25;
-            dataGridViewCellStyle210.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewMarcados.RowsDefaultCellStyle = dataGridViewCellStyle210;
+            dataGridViewCellStyle138.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMarcados.RowsDefaultCellStyle = dataGridViewCellStyle138;
             this.dataGridViewMarcados.RowTemplate.Height = 30;
             this.dataGridViewMarcados.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewMarcados.Size = new System.Drawing.Size(481, 128);
+            this.dataGridViewMarcados.Size = new System.Drawing.Size(481, 124);
             this.dataGridViewMarcados.TabIndex = 15;
             // 
             // dataGridViewButtonColumn2
             // 
-            dataGridViewCellStyle204.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle204.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle204.ForeColor = System.Drawing.Color.Blue;
-            this.dataGridViewButtonColumn2.DefaultCellStyle = dataGridViewCellStyle204;
+            dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle132.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle132.ForeColor = System.Drawing.Color.Blue;
+            this.dataGridViewButtonColumn2.DefaultCellStyle = dataGridViewCellStyle132;
             this.dataGridViewButtonColumn2.DividerWidth = 1;
             this.dataGridViewButtonColumn2.Frozen = true;
             this.dataGridViewButtonColumn2.HeaderText = "ITEM";
@@ -4597,8 +4749,8 @@ namespace BomDia
             // 
             // dataGridViewTextBoxColumn9
             // 
-            dataGridViewCellStyle205.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle205;
+            dataGridViewCellStyle133.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle133;
             this.dataGridViewTextBoxColumn9.HeaderText = "PRETENSÕES ◣";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
@@ -4608,9 +4760,9 @@ namespace BomDia
             // 
             // dataGridViewTextBoxColumn10
             // 
-            dataGridViewCellStyle206.Format = "d";
-            dataGridViewCellStyle206.NullValue = null;
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle206;
+            dataGridViewCellStyle134.Format = "d";
+            dataGridViewCellStyle134.NullValue = null;
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle134;
             this.dataGridViewTextBoxColumn10.FillWeight = 80F;
             this.dataGridViewTextBoxColumn10.HeaderText = "QUANDO";
             this.dataGridViewTextBoxColumn10.MinimumWidth = 8;
@@ -4632,11 +4784,11 @@ namespace BomDia
             // dataGridViewComboBoxColumn3
             // 
             this.dataGridViewComboBoxColumn3.DataSource = this.PrioridadesBindingSource;
-            dataGridViewCellStyle207.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle207.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle207.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle207.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewComboBoxColumn3.DefaultCellStyle = dataGridViewCellStyle207;
+            dataGridViewCellStyle135.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle135.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle135.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle135.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewComboBoxColumn3.DefaultCellStyle = dataGridViewCellStyle135;
             this.dataGridViewComboBoxColumn3.DisplayMember = "Denomination";
             this.dataGridViewComboBoxColumn3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.dataGridViewComboBoxColumn3.HeaderText = "POR QUÊ";
@@ -4659,11 +4811,11 @@ namespace BomDia
             // 
             // dataGridViewComboBoxColumn4
             // 
-            dataGridViewCellStyle208.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle208.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle208.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle208.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewComboBoxColumn4.DefaultCellStyle = dataGridViewCellStyle208;
+            dataGridViewCellStyle136.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle136.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle136.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle136.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewComboBoxColumn4.DefaultCellStyle = dataGridViewCellStyle136;
             this.dataGridViewComboBoxColumn4.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
             this.dataGridViewComboBoxColumn4.DividerWidth = 1;
             this.dataGridViewComboBoxColumn4.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -4775,10 +4927,10 @@ namespace BomDia
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Emoji", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label4.Location = new System.Drawing.Point(113, 2);
+            this.label4.Location = new System.Drawing.Point(113, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 26);
+            this.label4.Size = new System.Drawing.Size(0, 31);
             this.label4.TabIndex = 16;
             // 
             // label10
@@ -4788,9 +4940,9 @@ namespace BomDia
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("MV Boli", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label10.Location = new System.Drawing.Point(3, 6);
+            this.label10.Location = new System.Drawing.Point(3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 18);
+            this.label10.Size = new System.Drawing.Size(79, 31);
             this.label10.TabIndex = 18;
             this.label10.Text = "Tempo Real";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -4802,7 +4954,7 @@ namespace BomDia
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 168);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 164);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -4815,7 +4967,7 @@ namespace BomDia
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.Size = new System.Drawing.Size(18, 20);
             this.label1.TabIndex = 18;
             this.label1.Text = "?";
             // 
@@ -4828,7 +4980,7 @@ namespace BomDia
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(579, 197);
+            this.groupBox1.Size = new System.Drawing.Size(579, 193);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PRÉVIA";
@@ -4843,14 +4995,14 @@ namespace BomDia
             this.dataGridViewPrévia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewPrévia.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridViewPrévia.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle211.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle211.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle211.Font = new System.Drawing.Font("MV Boli", 10F);
-            dataGridViewCellStyle211.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle211.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle211.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle211.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewPrévia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle211;
+            dataGridViewCellStyle139.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle139.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle139.Font = new System.Drawing.Font("MV Boli", 10F);
+            dataGridViewCellStyle139.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle139.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle139.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle139.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewPrévia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle139;
             this.dataGridViewPrévia.ColumnHeadersHeight = 20;
             this.dataGridViewPrévia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewButtonColumn1,
@@ -4864,16 +5016,16 @@ namespace BomDia
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewCheckBoxColumn1});
             this.dataGridViewPrévia.DataSource = this.bindingSourcePrévia;
-            dataGridViewCellStyle217.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle217.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle217.Font = new System.Drawing.Font("MV Boli", 10F);
-            dataGridViewCellStyle217.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle217.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle217.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle217.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewPrévia.DefaultCellStyle = dataGridViewCellStyle217;
+            dataGridViewCellStyle145.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle145.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle145.Font = new System.Drawing.Font("MV Boli", 10F);
+            dataGridViewCellStyle145.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle145.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle145.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle145.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewPrévia.DefaultCellStyle = dataGridViewCellStyle145;
             this.dataGridViewPrévia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewPrévia.Location = new System.Drawing.Point(3, 25);
+            this.dataGridViewPrévia.Location = new System.Drawing.Point(3, 36);
             this.dataGridViewPrévia.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridViewPrévia.Name = "dataGridViewPrévia";
             this.dataGridViewPrévia.ReadOnly = true;
@@ -4882,17 +5034,17 @@ namespace BomDia
             this.dataGridViewPrévia.RowHeadersWidth = 25;
             this.dataGridViewPrévia.RowTemplate.Height = 30;
             this.dataGridViewPrévia.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewPrévia.Size = new System.Drawing.Size(573, 169);
+            this.dataGridViewPrévia.Size = new System.Drawing.Size(573, 154);
             this.dataGridViewPrévia.TabIndex = 15;
             // 
             // dataGridViewButtonColumn1
             // 
             this.dataGridViewButtonColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewButtonColumn1.DataPropertyName = "IND";
-            dataGridViewCellStyle212.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle212.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle212.ForeColor = System.Drawing.Color.Blue;
-            this.dataGridViewButtonColumn1.DefaultCellStyle = dataGridViewCellStyle212;
+            dataGridViewCellStyle140.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle140.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle140.ForeColor = System.Drawing.Color.Blue;
+            this.dataGridViewButtonColumn1.DefaultCellStyle = dataGridViewCellStyle140;
             this.dataGridViewButtonColumn1.DividerWidth = 1;
             this.dataGridViewButtonColumn1.HeaderText = "ITEM";
             this.dataGridViewButtonColumn1.MinimumWidth = 8;
@@ -4905,24 +5057,24 @@ namespace BomDia
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn4.DataPropertyName = "QUANDO";
-            dataGridViewCellStyle213.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle213.Format = "d";
-            dataGridViewCellStyle213.NullValue = null;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle213;
+            dataGridViewCellStyle141.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle141.Format = "d";
+            dataGridViewCellStyle141.NullValue = null;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle141;
             this.dataGridViewTextBoxColumn4.FillWeight = 80F;
             this.dataGridViewTextBoxColumn4.HeaderText = "QUANDO";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn4.Width = 94;
+            this.dataGridViewTextBoxColumn4.Width = 134;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewTextBoxColumn3.DataPropertyName = "OQUE";
-            dataGridViewCellStyle214.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle214;
+            dataGridViewCellStyle142.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle142;
             this.dataGridViewTextBoxColumn3.HeaderText = "PRETENSÕES ◣";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
@@ -4938,18 +5090,18 @@ namespace BomDia
             this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.dataGridViewTextBoxColumn5.Width = 181;
             // 
             // dataGridViewComboBoxColumn1
             // 
             this.dataGridViewComboBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewComboBoxColumn1.DataPropertyName = "PORQUE";
             this.dataGridViewComboBoxColumn1.DataSource = this.PrioridadesBindingSource;
-            dataGridViewCellStyle215.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle215.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle215.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle215.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle215;
+            dataGridViewCellStyle143.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle143.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle143.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle143.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle143;
             this.dataGridViewComboBoxColumn1.DisplayMember = "Denomination";
             this.dataGridViewComboBoxColumn1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.dataGridViewComboBoxColumn1.HeaderText = "POR QUÊ";
@@ -4969,17 +5121,17 @@ namespace BomDia
             this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 69;
+            this.dataGridViewTextBoxColumn6.Width = 99;
             // 
             // dataGridViewComboBoxColumn2
             // 
             this.dataGridViewComboBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewComboBoxColumn2.DataPropertyName = "CRITÉRIO";
-            dataGridViewCellStyle216.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle216.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle216.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle216.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewComboBoxColumn2.DefaultCellStyle = dataGridViewCellStyle216;
+            dataGridViewCellStyle144.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle144.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle144.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(10)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle144.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewComboBoxColumn2.DefaultCellStyle = dataGridViewCellStyle144;
             this.dataGridViewComboBoxColumn2.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
             this.dataGridViewComboBoxColumn2.DividerWidth = 1;
             this.dataGridViewComboBoxColumn2.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -4992,7 +5144,7 @@ namespace BomDia
             this.dataGridViewComboBoxColumn2.ReadOnly = true;
             this.dataGridViewComboBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewComboBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewComboBoxColumn2.Width = 142;
+            this.dataGridViewComboBoxColumn2.Width = 204;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -5022,7 +5174,7 @@ namespace BomDia
             this.dataGridViewCheckBoxColumn1.MinimumWidth = 8;
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn1.Width = 85;
+            this.dataGridViewCheckBoxColumn1.Width = 119;
             // 
             // bindingSourcePrévia
             // 
@@ -5048,12 +5200,12 @@ namespace BomDia
             this.contextMenuStripFile.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pastaDoItemToolStripMenuItem});
             this.contextMenuStripFile.Name = "contextMenuStripFile";
-            this.contextMenuStripFile.Size = new System.Drawing.Size(147, 26);
+            this.contextMenuStripFile.Size = new System.Drawing.Size(193, 36);
             // 
             // pastaDoItemToolStripMenuItem
             // 
             this.pastaDoItemToolStripMenuItem.Name = "pastaDoItemToolStripMenuItem";
-            this.pastaDoItemToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.pastaDoItemToolStripMenuItem.Size = new System.Drawing.Size(192, 32);
             this.pastaDoItemToolStripMenuItem.Text = "Pasta do item";
             this.pastaDoItemToolStripMenuItem.Click += new System.EventHandler(this.pastaDoItemToolStripMenuItem_Click);
             // 
@@ -5070,12 +5222,12 @@ namespace BomDia
             this.contextMenuStripMarcadas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.atualizarToolStripMenuItem});
             this.contextMenuStripMarcadas.Name = "contextMenuStripMarcadas";
-            this.contextMenuStripMarcadas.Size = new System.Drawing.Size(121, 26);
+            this.contextMenuStripMarcadas.Size = new System.Drawing.Size(153, 36);
             // 
             // atualizarToolStripMenuItem
             // 
             this.atualizarToolStripMenuItem.Name = "atualizarToolStripMenuItem";
-            this.atualizarToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.atualizarToolStripMenuItem.Size = new System.Drawing.Size(152, 32);
             this.atualizarToolStripMenuItem.Text = "Atualizar";
             this.atualizarToolStripMenuItem.Click += new System.EventHandler(this.atualizarToolStripMenuItem_Click);
             // 
@@ -5119,169 +5271,6 @@ namespace BomDia
             this.toolStripMenuItem2.Size = new System.Drawing.Size(223, 34);
             this.toolStripMenuItem2.Text = "Pasta do Item";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItemPasta_Click);
-            // 
-            // toolStripLabelNovo
-            // 
-            this.toolStripLabelNovo.Name = "toolStripLabelNovo";
-            this.toolStripLabelNovo.Size = new System.Drawing.Size(63, 15);
-            this.toolStripLabelNovo.Text = "No&vo";
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.Control;
-            this.button8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.button8.DropDownButtonWidth = 15;
-            this.button8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3});
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.button8.ImageTransparentColor = System.Drawing.Color.White;
-            this.button8.Name = "button8";
-            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button8.Size = new System.Drawing.Size(63, 17);
-            this.button8.Tag = "Apagado";
-            this.button8.Text = "Novo Ite&m";
-            this.button8.ButtonClick += new System.EventHandler(this.button8_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "Pasta do Item";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-            // 
-            // toolStrip2
-            // 
-            this.toolStrip2.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabelNovo,
-            this.button8});
-            this.toolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.toolStrip2.Location = new System.Drawing.Point(0, 25);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip2.Size = new System.Drawing.Size(65, 51);
-            this.toolStrip2.Stretch = true;
-            this.toolStrip2.TabIndex = 0;
-            this.toolStrip2.TabStop = true;
-            this.toolStrip2.Text = "toolStrip2";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Miriam Libre", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label11.Location = new System.Drawing.Point(3, 0);
-            this.label11.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(763, 25);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "CADERNETA";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tableLayoutPanel13
-            // 
-            this.tableLayoutPanel13.AutoSize = true;
-            this.tableLayoutPanel13.ColumnCount = 2;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel13.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel13.Controls.Add(this.label11, 0, 0);
-            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(68, 0);
-            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 1;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(834, 25);
-            this.tableLayoutPanel13.TabIndex = 4;
-            // 
-            // OQuePretendido
-            // 
-            this.OQuePretendido.BackColor = System.Drawing.Color.White;
-            this.OQuePretendido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OQuePretendido.ContextMenuStrip = this.EditarContextMenuStrip;
-            this.OQuePretendido.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "OQUE", true));
-            this.OQuePretendido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OQuePretendido.Font = new System.Drawing.Font("Malgun Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OQuePretendido.Location = new System.Drawing.Point(3, 4);
-            this.OQuePretendido.Margin = new System.Windows.Forms.Padding(3, 4, 0, 0);
-            this.OQuePretendido.Name = "OQuePretendido";
-            this.OQuePretendido.Size = new System.Drawing.Size(513, 47);
-            this.OQuePretendido.TabIndex = 1;
-            this.OQuePretendido.Text = "";
-            this.OQuePretendido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OQuePretendido_KeyPress);
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel4.Controls.Add(this.label7);
-            this.flowLayoutPanel4.Controls.Add(this.QuandoPrevisto);
-            this.flowLayoutPanel4.Controls.Add(this.dateTimePicker3);
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(519, 3);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(244, 45);
-            this.flowLayoutPanel4.TabIndex = 6;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.CustomFormat = "dddd";
-            this.dateTimePicker3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "QUANDO", true));
-            this.dateTimePicker3.Enabled = false;
-            this.dateTimePicker3.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(3, 35);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(180, 31);
-            this.dateTimePicker3.TabIndex = 3;
-            // 
-            // QuandoPrevisto
-            // 
-            this.QuandoPrevisto.BackColor = System.Drawing.Color.White;
-            this.QuandoPrevisto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.TarefasBindingSource, "QUANDO", true));
-            this.QuandoPrevisto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuandoPrevisto.Location = new System.Drawing.Point(74, 0);
-            this.QuandoPrevisto.Margin = new System.Windows.Forms.Padding(0);
-            this.QuandoPrevisto.Mask = "00/00/0000";
-            this.QuandoPrevisto.Name = "QuandoPrevisto";
-            this.QuandoPrevisto.Size = new System.Drawing.Size(109, 24);
-            this.QuandoPrevisto.TabIndex = 2;
-            this.QuandoPrevisto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.QuandoPrevisto_KeyPress);
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Margin = new System.Windows.Forms.Padding(0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 32);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "&Quando:";
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel7.ColumnCount = 3;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.29475F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.70525F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
-            this.tableLayoutPanel7.Controls.Add(this.PictureBoxEditar, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.flowLayoutPanel4, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.OQuePretendido, 0, 0);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(830, 51);
-            this.tableLayoutPanel7.TabIndex = 1;
-            this.tableLayoutPanel7.TabStop = true;
             // 
             // BomDia
             // 
@@ -5336,12 +5325,19 @@ namespace BomDia
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEditar)).EndInit();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel4.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).EndInit();
             this.bindingNavigator3.ResumeLayout(false);
             this.bindingNavigator3.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
+            this.tableLayoutPanel13.ResumeLayout(false);
+            this.tableLayoutPanel13.PerformLayout();
             this.splitContainer7.Panel1.ResumeLayout(false);
             this.splitContainer7.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
@@ -5378,11 +5374,11 @@ namespace BomDia
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).EndInit();
             this.bindingNavigator4.ResumeLayout(false);
             this.bindingNavigator4.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BindingExclui)).EndInit();
             this.BindingExclui.ResumeLayout(false);
             this.BindingExclui.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BindingNavegador)).EndInit();
             this.BindingNavegador.ResumeLayout(false);
@@ -5406,13 +5402,6 @@ namespace BomDia
             this.contextMenuStripFile.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceMarcados)).EndInit();
             this.contextMenuStripMarcadas.ResumeLayout(false);
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -5568,7 +5557,6 @@ namespace BomDia
         private System.Windows.Forms.ToolTip toolTipEntrega;
         private System.Windows.Forms.ImageList imageListBandeja;
         private System.Windows.Forms.ToolTip toolTipBandeja;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.TextBox label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
