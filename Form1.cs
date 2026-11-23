@@ -70,7 +70,7 @@ namespace BomDia
         public void BomDia_Load(object sender, EventArgs e)
         {
             this.Text = " Vida " + String.Format("Versão {0}", Program.MeuAssemblyVersion);
-            label5.BackColor = splitContainer5.Panel2.BackColor; 
+            //label5.BackColor = splitContainer5.Panel2.BackColor; 
 
             tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
             tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
@@ -752,17 +752,17 @@ namespace BomDia
 
         private void ShowLineJoin_tableLayoutPanel9(PaintEventArgs e)
         {
+            
             /* Traçar um linha horizontal */
             // Create pen.
-            Pen bluePen = new Pen(Color.Blue, 3)
+            Pen bluePen = new Pen(Color.Red, 2)
             {
                 DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
             };
             // Create points that define line.
-            PointF point1 =  new PointF(splitContainer5.Panel1.Width +
-                splitContainer5.Panel2.Width -
-                tableLayoutPanel7.Width -1 /* coordenada X */,
-                splitContainer5.Height /* coordenada Y */);  
+            PointF point1 =  new PointF(splitContainer5.Width  -
+                tableLayoutPanel7.Width - tableLayoutPanel11.Width -11 /* coordenada X */,
+                splitContainer5.Height+1 /* coordenada Y */);  
 
             PointF point2 =
             new PointF(tableLayoutPanel7.Width + point1.X,point1.Y);
@@ -770,18 +770,19 @@ namespace BomDia
             // Draw line to screen.
             e.Graphics.DrawLine(bluePen, point1, point2);
             /* conclusão linha horizontal*/
+            // Draw second line
+            point1 = new PointF(point1.X, 2);
+            point2 = new PointF(point2.X, point1.Y);
+            e.Graphics.DrawLine(bluePen, point1, point2);
 
-
-            
         }
 
         private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
         {
             ShowLineJoin_tableLayoutPanel9(e);
+            
+            
         }
-
-
-
 
         private void ListaDeDatas_Enter(object sender, EventArgs e)
         {
@@ -1421,24 +1422,47 @@ namespace BomDia
         private void tableLayoutPanel9_Paint_1(object sender, PaintEventArgs e)
         {
             // Create pen.
-            Pen bluePen = new Pen(Color.Blue, 3)
+            Pen bluePen = new Pen(Color.Red, 2)
             {
                 DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
             };
             // Create points that define line.
-            PointF point1 = new PointF(tableLayoutPanel9.Left + 
-                tableLayoutPanel9.Width - tableLayoutPanel7.Width-2
-                /* coordenada X */,
-                splitContainer5.Height /* coordenada Y */);
+            PointF point1 = new PointF(tableLayoutPanel7.Left + tableLayoutPanel11.Width- 23
+                /* coordenada X */, splitContainer5.Height /* coordenada Y */);
 
             PointF point2 =
             new PointF(tableLayoutPanel7.Width + point1.X, point1.Y);
 
             /* Traçar uma linha vertical.  */
-            point2 = new PointF(point1.X, point1.Y + 10);
-            point1 = new PointF(point1.X, 0);
-            // Draw line.
+
+            point2 = new PointF(point1.X, point1.Y );
+            point1 = new PointF(point1.X, 1);
+            // Draw vertical line.
             e.Graphics.DrawLine(bluePen, point1, point2);
+
+            /* Refazer as linhas horizontais */
+            /* -----------------------------------*/
+            // Create pen.
+            Pen bluePen2 = new Pen(Color.Red, 2)
+            {
+                DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
+            };
+            // Create points that define line.
+            PointF point11 = new PointF(splitContainer5.Width -
+                tableLayoutPanel9.Width - tableLayoutPanel11.Width+ 5  /* coordenada X */,
+            splitContainer5.Height + 1 /* coordenada Y */);
+
+            PointF point22 =
+            new PointF(tableLayoutPanel7.Width + point11.X, point11.Y);
+
+            // Draw line to screen.
+            e.Graphics.DrawLine(bluePen2, point11, point22);
+            /* conclusão linha horizontal*/
+            // Draw second line
+            point11 = new PointF(point11.X, 2);
+            point22 = new PointF(point22.X, point11.Y);
+            e.Graphics.DrawLine(bluePen2, point11, point22);
+
 
         }
 
