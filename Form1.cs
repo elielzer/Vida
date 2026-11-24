@@ -74,9 +74,8 @@ namespace BomDia
 
             tableLayoutPanel10.BackColor = splitContainer5.Panel2.BackColor;
             tabControl2.TabPages[1].BackColor =  splitContainer5.Panel2.BackColor   ;
-            //toolStripLabel3.BackColor = Control.DefaultBackColor;
             TarefasDataSet.ReadXml(BancoDados, XmlReadMode.ReadSchema);
-            //
+
 
             // Capturar como esteja a janela do aplicativo 
             DataHoje.Visible = true;   DataHoje.Text = DateTime.Today.ToShortDateString();
@@ -114,9 +113,6 @@ namespace BomDia
             checkBoxExibirPrévia.Refresh();
             dataGridViewPrévia.FirstDisplayedScrollingRowIndex = 0;
 
-            // Mostrar dados marcados
-            //startAsyncButton_Click();
-
 
             // Preencho o nome do usuário na barra de status
             toolStripStatusLabelUsuário.Text = "Usuário atual: ".ToUpper() + Usuário.ToUpper();
@@ -136,6 +132,20 @@ namespace BomDia
                 toolTipEntrega.SetToolTip(CheckBoxIntegrador, "Arquivo geral.");
             }
 
+            // Ajustar a formatação
+            float currentSize;
+            currentSize = tabControl2.Font.Size;
+            currentSize = 1;
+            tabControl2.Font = new Font(tabControl2.Font.Name, currentSize,
+                tabControl2.Font.Style, tabControl2.Font.Unit);
+
+            HideTabHeaders(tabControl2);
+            currentSize = 10;
+            tableLayoutPanel2.Font = new Font(tableLayoutPanel2.Font.Name, currentSize,
+                tableLayoutPanel2.Font.Style, tableLayoutPanel2.Font.Unit);
+
+            TabPageReferencias.Font = new Font(TabPageReferencias.Font.Name, currentSize,
+    TabPageReferencias.Font.Style, TabPageReferencias.Font.Unit);
 
             using (Font font = new Font ("Palatino Linotype", 10))
             {
@@ -147,6 +157,17 @@ namespace BomDia
             }
 
             this.toolStripSplitButtonCadeado.Text = Char.ConvertFromUtf32(128274) + " &Lacre";
+        }
+
+
+        /*FORMATA CABEÇALHOS DE CONTROLTABs*/
+        private void HideTabHeaders(TabControl tabControl)
+        {
+            tabControl.Alignment = TabAlignment.Top;
+            tabControl.Appearance = TabAppearance.FlatButtons;
+            tabControl.ItemSize = new Size(0, 1);
+            tabControl.SizeMode = TabSizeMode.Fixed;
+
         }
 
         public void FiltraDadosPrévia()
@@ -178,10 +199,7 @@ namespace BomDia
                 MessageBox.Show(ex.Message);
                 return;
             }
-
-
         }
-
         private void CortinaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Surgir a janela principal no tamanho padrão
@@ -252,8 +270,6 @@ namespace BomDia
                 this.Tag = "Min";
 
             }
-            ;
-
         }
 
         private void SalvarToolStripButton_Click(object sender, EventArgs e)
@@ -464,9 +480,9 @@ namespace BomDia
         }
         private void DataGridView1_Enter(object sender, EventArgs e)
         {
-            MSGtoolStripStatusLabel.Text = "Bom dia. Arquivo de dados: " + TarefasDataSet.Namespace;
-            NRow = DataGridView1.Rows.Count - 1;
-            this.Text = "Mostrando agora " + NRow.ToString() + "Tarefa(s)";
+            MSGtoolStripStatusLabel.Text = "Bom dia. Arquivo XML: " + TarefasDataSet.Namespace;
+            NRow = DataGridView1.Rows.Count;
+            this.Text = "Mostrando agora " + NRow.ToString() + " tarefa(s)";
         }
 
         private void hojeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -780,7 +796,6 @@ namespace BomDia
         private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
         {
             ShowLineJoin_tableLayoutPanel9(e);
-            
             
         }
 
@@ -1427,7 +1442,7 @@ namespace BomDia
                 DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
             };
             // Create points that define line.
-            PointF point1 = new PointF(tableLayoutPanel7.Left + tableLayoutPanel11.Width- 23
+            PointF point1 = new PointF(tableLayoutPanel7.Left + tableLayoutPanel11.Width- 29
                 /* coordenada X */, splitContainer5.Height /* coordenada Y */);
 
             PointF point2 =
@@ -1449,7 +1464,7 @@ namespace BomDia
             };
             // Create points that define line.
             PointF point11 = new PointF(splitContainer5.Width -
-                tableLayoutPanel9.Width - tableLayoutPanel11.Width+ 5  /* coordenada X */,
+                tableLayoutPanel9.Width - tableLayoutPanel11.Width-14  /* coordenada X */,
             splitContainer5.Height + 1 /* coordenada Y */);
 
             PointF point22 =
@@ -1469,6 +1484,26 @@ namespace BomDia
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             pastaDoItemToolStripMenuItem.PerformClick();
+        }
+
+        private void contextosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl2.SelectTab(TabPageItens);
+        }
+
+        private void calendárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl2.SelectTab(TabPageDatas);    
+        }
+
+        private void referToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl2.SelectTab(TabPageReferencias);
+        }
+
+        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl2.SelectTab(TabPageCalculadora);
         }
     }
     
