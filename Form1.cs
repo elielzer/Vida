@@ -390,7 +390,7 @@ namespace BomDia
                 MSGtoolStripStatusLabel.Text =
                     "Arq." + BancoDados;
 
-                DiaBomDiaLabel.Text = "Em Pauta 📌".ToUpper();
+                DiaBomDiaLabel.Text = "Em Pauta".ToUpper();//📌
                 label4.Text = "⌚";
 
                 
